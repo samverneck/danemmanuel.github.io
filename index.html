@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="css/bigdesktop.css">
 	<link rel="stylesheet" href="css/desktop.css">
 	<link rel="stylesheet" href="css/mobile.css">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Sacramento" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-
+	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
 
 	<title></title>
 </head>
@@ -17,31 +18,39 @@
 <body>
 	<div class="menu-left">
 
-		<div class="icon-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-
-		<div class="icon-menu-close">
-			<span></span>
-			<span></span>
-
-		</div>
+		<div class="hamburger-holder"> <button class="hamburger" type="button">  <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button> </div>
 
 
 	</div>
 	<div class="content-menu">
 		
-			<div class="menu-list">
-				<ul>
-					<li>Home</li>
-					<li>Portfolio</li>
-					<li>Sobre mim</li>
-					<li>Contato</li>
-				</ul>
+		<div class="menu-list">
+			<ul>
+				<li> <a class="first after" href="#">home</a></li>
+				<li> <a class="first after" href="#">portfólio</a></li>
+				<li> <a class="first after" href="#">sobre mim</a></li>
+				<li> <a class="first after" href="#">contato</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="content-menu-right">
+		<div class="imgprofile">
+			<img src="img/me.jpg" alt="Dan Emmanuel">
+			<div class="descriptionmenu">
+				Desenvolvedor web não... projetista de soluções
 			</div>
 		</div>
+		<div class="socialnetworks">
+			<div class="facebook">
+				facebook
+			</div>
+			<div class="linkedin">
+				linkedin
+			</div>
+		</div>
+		
+	</div>
 
 	<div class="hero">
 		<div class="content-hero">
@@ -51,6 +60,7 @@
 				Muito prazer em conhece-lo! <br>
 				Fico feliz em poder mostrar meus trabalhos à você.
 			</div>
+
 		</div>
 	</div>
 

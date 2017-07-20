@@ -10,6 +10,17 @@
 		}
 	}
 
+	@keyframes animacao-menulist {
+		from {
+			top:-20%;
+		}
+		to { 
+			top:50%;
+			visibility: visible;
+
+		}
+	}
+
 	@keyframes animacao-background {
 		from {
 			top: -100%; 
@@ -118,11 +129,37 @@
 	@keyframes animacaomenuclose {
 
 		from {
-			
+
 			width: 50%;
 		}
 		to { 
+
 			width: 6%;
+		}
+
+	}
+
+	@keyframes animacaomenuright {
+
+		from {
+
+			width: 50%;
+		}
+		to { 
+		opacity:1;
+			width: 0%;
+		}
+
+	}
+		@keyframes animacaomenurightopen {
+
+		from {
+
+			width: 0%;
+		}
+		to { 
+
+			width: 50%;
 		}
 
 	}
@@ -200,10 +237,12 @@
 			@keyframes menulist {
 
 				from {
+					opacity: 0;
 					transform: translateX(-100%);
 				}
 				to { 
 					top: 0px;
+					opacity:1;
 					transform: translateY(0);
 					visibility: visible;
 				}
