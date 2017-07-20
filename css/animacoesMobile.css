@@ -1,0 +1,230 @@
+@media only screen and (min-width : 360px) and (max-width : 760px) {
+	@keyframes animacao {
+	from {
+		margin-top: -500px;
+	}
+	to { 
+		margin-top: 0px;
+		visibility: visible;
+
+	}
+}
+
+@keyframes animacao-background {
+	from {
+		top: -100%; 
+	}
+	to { 
+		top: 0;
+		visibility: visible;
+	}
+}
+
+
+@keyframes lines {
+	from {
+		transform: translateY(-100%);
+	}
+	to { 
+		top: 0px;
+		transform: translateY(0);
+		visibility: visible;
+	}
+}
+
+@keyframes blockblue {
+	from {
+
+		width: 0px;
+	}
+	to { 
+		visibility: visible;
+		width: 100%;
+
+	}
+}
+
+@keyframes blockbottom {
+	from {
+		transform: translateY(100%);
+		
+	}
+	to { 
+		visibility: visible;
+		
+		transform: translateY(0);
+
+	}
+}
+
+@keyframes overlay {
+	from {
+
+		transform: translateY(-100%);
+	}
+	to { 
+		visibility: visible;
+		transform: translateY(0);
+
+	}
+}
+@keyframes overlaytop {
+	from {
+
+		height: 0px;
+	}
+	to { 
+		visibility: visible;
+		height: 100%;
+
+	}
+}
+
+@keyframes lineheight {
+	from {
+
+		top: -500px;
+	}
+	to { 
+		top:30px;
+		visibility: visible;
+
+	}
+}
+
+@keyframes linebottom {
+	from {
+
+		bottom: -700px;
+	}
+	to { 
+		bottom:30px;
+		visibility: visible;
+
+	}
+}
+
+@keyframes animacaomenu {
+	0%   {top: 20px; height: 70px;}
+	15% {top:0px; padding-top: 35px;width: 50%;}
+	100% {height: 100vh;top:0px; padding-top: 35px;width: 100%;}
+
+}
+@keyframes animacaomenuclose {
+
+	0% {top: 0px; height: 100vh;width: 100%;}
+	15% {top: 20px; width: 100%;}
+	100% {top: 20px; height: 65px;width: 50%;}
+	
+}
+
+@keyframes animacao-iconmenu {
+
+	from {
+		padding-top: 0px;
+		transform: translateX(-100%);
+	}
+	to { 
+
+		transform: translateX(0);
+		visibility: visible;
+		padding: 40px;
+	}
+	
+}
+@keyframes footermenu {
+
+	0% {position: absolute;
+		left: 13%;
+		bottom: -100%;
+		opacity: 0;}
+	25% {position: absolute;
+		left: 13%;
+		bottom: -100%;
+		opacity: 0;}
+	50% {position: absolute;
+		left: 13%;
+		bottom: -100%;
+		opacity: 0;}
+	100% {opacity: 1;
+		position: absolute;
+		left: 90px;
+		bottom: 15%;}
+
+	
+	
+}
+
+@keyframes animacao-tituloPagina {
+
+	from {
+		left: 70px;
+		top: 500px;
+	}
+	to { 
+
+		left: 70px;
+		top: 21px;
+
+	}
+	
+}
+
+@keyframes animacao-titulopagina-boot {
+
+	from {
+		left: 70px;
+		width: 100%;
+		top: 50%;
+		opacity: 0;
+		letter-spacing: 2px;
+		text-transform: lowercase;
+		font-size: 20px;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+	}
+	to { 
+		opacity: 1;
+		left: 70px;
+		top: 15px;
+		width: 100%;
+		letter-spacing: 2px;
+		text-transform: lowercase;
+		font-size: 20px;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+
+	}
+	
+}
+
+@keyframes menulist {
+
+	from {
+		transform: translateX(-100%);
+	}
+	to { 
+		top: 0px;
+		transform: translateY(0);
+		visibility: visible;
+	}
+	
+}
+@keyframes socialmenu {
+
+	from {
+		right: 0;
+		top: -200%;
+
+		opacity: 0;
+	}
+	to { 
+		opacity: 1;
+		right: -50px;
+		display: flex;
+		top: 30%;
+		position: absolute;
+	}
+	
+}
+}

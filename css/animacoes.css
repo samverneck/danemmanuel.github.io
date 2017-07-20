@@ -1,0 +1,228 @@
+@media only screen and (min-width: 760px) {
+	@keyframes animacao {
+		from {
+			margin-top: -500px;
+		}
+		to { 
+			margin-top: 0px;
+			visibility: visible;
+
+		}
+	}
+
+	@keyframes animacao-background {
+		from {
+			top: -100%; 
+		}
+		to { 
+			top: 0;
+			visibility: visible;
+		}
+	}
+
+
+	@keyframes lines {
+		from {
+			transform: translateY(-100%);
+		}
+		to { 
+			top: 0px;
+			transform: translateY(0);
+			visibility: visible;
+		}
+	}
+
+	@keyframes blockblue {
+		from {
+
+			width: 0px;
+		}
+		to { 
+			visibility: visible;
+			width: 100%;
+
+		}
+	}
+
+	@keyframes blockbottom {
+		from {
+			transform: translateY(100%);
+
+		}
+		to { 
+			visibility: visible;
+
+			transform: translateY(0);
+
+		}
+	}
+
+	@keyframes overlay {
+		from {
+
+			transform: translateY(-100%);
+		}
+		to { 
+			visibility: visible;
+			transform: translateY(0);
+
+		}
+	}
+	@keyframes overlaytop {
+		from {
+
+			height: 0px;
+		}
+		to { 
+			visibility: visible;
+			height: 100%;
+
+		}
+	}
+
+	@keyframes lineheight {
+		from {
+
+			top: -500px;
+		}
+		to { 
+			top:30px;
+			visibility: visible;
+
+		}
+	}
+
+	@keyframes linebottom {
+		from {
+
+			bottom: -700px;
+		}
+		to { 
+			bottom:30px;
+			visibility: visible;
+
+		}
+	}
+
+	@keyframes animacaomenu {
+
+		from {
+
+			width: 3%;
+		}
+		to { 
+			width: 50%;
+		}
+
+	}
+	@keyframes animacaomenuclose {
+
+		from {
+			
+			width: 50%;
+		}
+		to { 
+			width: 6%;
+		}
+
+	}
+
+	@keyframes animacao-iconmenu {
+
+		from {
+			padding-top: 0px;
+			transform: translateX(-100%);
+		}
+		to { 
+
+			transform: translateX(0);
+			visibility: visible;
+			padding-top: 40px;
+		}
+
+	}
+	@keyframes footermenu {
+
+		0% {position: absolute;
+			left: 13%;
+			bottom: -100%;
+			opacity: 0;}
+			100% {opacity: 1;
+				position: absolute;
+				left: 80px;
+				bottom: 8%;}
+
+			}
+
+			@keyframes animacao-tituloPagina {
+
+				from {
+					left: 70px;
+					top: 500px;
+				}
+				to { 
+
+					left: 70px;
+					top: 21px;
+
+				}
+
+			}
+
+			@keyframes animacao-titulopagina-boot {
+
+				from {
+					left: 70px;
+					width: 100%;
+					top: 50%;
+					opacity: 0;
+					letter-spacing: 2px;
+					text-transform: lowercase;
+					font-size: 20px;
+					color: #fff;
+					font-family: 'Lato', sans-serif;
+				}
+				to { 
+					opacity: 1;
+					left: 70px;
+					top: 15px;
+					width: 100%;
+					letter-spacing: 2px;
+					text-transform: lowercase;
+					font-size: 20px;
+					color: #fff;
+					font-family: 'Lato', sans-serif;
+
+				}
+
+			}
+
+			@keyframes menulist {
+
+				from {
+					transform: translateX(-100%);
+				}
+				to { 
+					top: 0px;
+					transform: translateY(0);
+					visibility: visible;
+				}
+
+			}
+			@keyframes socialmenu {
+
+				from {
+					right: 5%;
+					top: -100%;
+					opacity: 0;
+				}
+				to { 
+					opacity: 1;
+					right: 5%;
+					display: flex;
+					top: 30%;
+					position: absolute;
+				}
+
+			}
+		}

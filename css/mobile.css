@@ -1,0 +1,659 @@
+@import url("animacoesMobile.css");
+@media only screen and (min-width : 100px) and (max-width : 760px) {
+	/* Styles */
+	/* Styles */
+
+	body{display: none;}
+	section{
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 100px;
+
+	}
+	.portfolio{
+		z-index: 9;
+		background: #fff;
+
+	}
+	.liness {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		top: 0;
+		left: 0;
+	}
+	.fill-line-center{
+		width: 18%;
+		left: 50%;
+		position: absolute;
+		margin-left: -9%;
+	}
+	.fill-line-left{
+		left: 23%;
+		position: absolute;
+	}
+	.fill-line-left:before {
+		content: "";
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 100vh;
+		width: 1px;
+		background-color: rgba(232, 235, 237, 0.28);
+	}
+
+
+	.fill-line-right{
+
+		left: 77%;
+		position: absolute;
+	}
+	.fill-line-right:before {
+		content: "";
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 100vh;
+		width: 1px;
+		background-color: rgba(232, 235, 237, 0.28);
+	}
+
+
+
+	.fill-line-center:after {
+		content: "";
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 100vh;
+		width: 1px;
+		background-color: rgba(232, 235, 237, 0.28);
+	}
+
+	.fill-line-center:before {
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		height: 100vh;
+		width: 1px;
+		background-color: rgba(232, 235, 237, 0.28);
+	}
+
+
+	.content-page-home{
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.47);
+	}
+	.text-home{
+		display: block;
+		overflow-y: hidden;
+
+	}
+	.keyboard:before{
+		z-index: 11;
+		opacity: 0.6;
+		content: '';
+		position: fixed;
+		right: 65px;
+		bottom: 20px;
+		background-image: url(../img/icons/keyboard.png);
+		width: 100px;
+		height: 100px;
+
+	}
+	.keyboard:after{
+		z-index: 11;
+		opacity: 0.5;
+		content: 'Use o teclado para navegar';
+		position: fixed;
+		right: 0px;
+		bottom: 20px;
+		width: 200px;
+	}
+	.block-transparente{
+		left: 20%;
+		top:0;
+		visibility: hidden;
+		z-index: 9;
+		position: absolute;
+		height: 70%;
+		width: 40%;
+		background-color: #000; 
+	}
+
+	.navgation-top{
+		height: 50px;
+		position: absolute;
+	}
+	#primary-menu{
+		display: none;
+	}
+	.menulist{
+		display: block !important;
+		animation-name: menulist;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+
+
+
+
+
+
+	.menu-primary-menu-container ul{
+		list-style: none;
+		text-align: left;
+	}
+	.menu-primary-menu-container ul li{
+		padding: 10px 0px;
+	}
+	.menu-primary-menu-container ul li a{
+		margin: 20px;
+		letter-spacing: 2px;
+		text-transform: lowercase;
+		font-size: 23px;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+
+	}
+	.social-menu{
+		display: none;
+		position: absolute;
+		right: 5%;
+		top: 30%;
+		position: absolute;
+		transform:rotate(-90deg);
+
+	}
+	.social-menuview{
+		display: flex;
+		
+		animation-name: socialmenu;
+		animation-duration: 1.5s;
+		animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.social-menu .facebook{
+		padding: 0px 40px;
+		font-family: 'Lato', sans-serif;
+		color: #8e8e8d;
+	}
+	.facebook:before{
+		content: '';
+		position: absolute;
+		top: 5.5px;
+		left: 160px;
+		width: 12px;
+		height: 12px;
+		border: 3px solid #fed12d;
+	}
+	.social-menu .instagram{
+		padding: 0px 40px;
+		font-family: 'Lato', sans-serif;
+		color: #8e8e8d;
+	}
+	.instagram:before{
+		content: '';
+		position: absolute;
+		top: 5.5px;
+		left: 19px;
+		width: 12px;
+		height: 12px;
+		border: 3px solid #fed12d;
+	}
+	.footer-menu-view{
+		display: block !important;
+		animation-name: footermenu;
+		animation-duration: 1.5s;
+		animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+
+	}
+	.footer-menu{
+		display: none;
+		position: absolute;
+		left: 13%;
+		bottom: 10%;
+	}
+	.footer-menu p{
+		color: #8e8e8d;
+		font-size: 15px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		margin:0px;
+	}
+
+	.navigation{
+		position: absolute;
+		text-align: right;
+		width: 100%;
+	}
+	.menu-header{
+		z-index: 10;
+		width: 100%;
+		position: absolute;
+	}
+	.center{
+		text-align: center !important;
+	}
+	.menu-header img{
+		padding: 0px;
+		max-width: 64px;
+		position: fixed;
+		top: 20px;
+		left: 7%;
+	}
+	
+	.content-block-bottom{
+		text-align: left;
+		padding: 20px;
+		color: #000;
+	}
+
+	.overlay{
+		visibility: hidden;
+		z-index: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.29);
+		top: 0;
+		left: 0;
+	}
+	.overlay-top{
+		visibility: hidden;
+		z-index: 5;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.32);
+		top: 0;
+		left: 0;
+	}
+
+	
+	.block-blue{
+		position: absolute;
+		left: 0px;
+		visibility: hidden;
+		overflow: hidden;
+		top: 0px;
+		height: 100%;
+		z-index: 10;
+		width: 100%;
+		visibility: visible;
+		background: #FFC72C;
+	}
+	.lineheight{
+		position: absolute;
+		left: 23%;
+		visibility: hidden;
+		top: 30px;
+		height: 50px;
+		z-index: 10;
+		width: 5px;
+		background: #FFC72C;
+	}
+
+	.linebottom{
+		position: absolute;
+		left: 77%;
+		visibility: hidden;
+		bottom: 30px;
+		height: 100px;
+		z-index: 10;
+		width: 5px;
+		background: #FFC72C;
+	}
+	
+	
+	.container-block{
+		z-index: 10;
+		position: absolute;
+		height: 250px;
+		right: 0;
+		width: 23%;
+		top: 50%;
+		margin-top: -125px;
+	}
+	.hamburger{padding:0;display:inline-block;cursor:pointer;transition-property:opacity, filter;transition-duration:0.45s;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}.hamburger .texto{display:none;margin-right:15px;text-transform:uppercase;font-family:"coves_bold";transition:.15s ease}.hamburger .hamburger-box{width:30px;height:18px;vertical-align:middle;display:inline-block;position:relative}.hamburger .hamburger-inner{display:block;top:50%;margin-top:-2px;top:2px}.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{content:"";display:block}.hamburger .hamburger-inner::before{top:8px;transition-property:transform, opacity;transition-timing-function:ease;transition-duration:0.2s}.hamburger .hamburger-inner::after{top:16px}.hamburger .hamburger-inner,.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{width:30px;height:2px;background-color:#fff;position:absolute;transition-property:transform;transition-duration:0.45s;transition-timing-function:ease}.hamburger.ativo .texto{color:#fff}.hamburger.ativo .hamburger-inner{transform:translate3d(0, 0px, 0) rotate(45deg)}.hamburger.ativo .hamburger-inner::before{transform:rotate(-45deg) translate3d(-5.71429px, -6px, 0);opacity:0}.hamburger.ativo .hamburger-inner::after{transform:translate3d(0, -16px, 0) rotate(-90deg)}.hamburger:hover:not(.ativo) .texto{color:#FFD000}.hamburger:hover:not(.ativo) .hamburger-inner{transform:translateY(-2px)}.hamburger:hover:not(.ativo) .hamburger-inner::before{transform:translateY(2px)}.hamburger:hover:not(.ativo) .hamburger-inner::after{transform:translateY(4px)}@media only screen and (min-width: 768px){.hamburger .texto{display:inline-block}.hamburger .hamburger-box{width:30px}.hamburger .hamburger-inner,.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{width:30px}}.btn{padding:7.5px 15px;border:1px solid transparent;display:inline-block;position:relative;font-size:18px;background-color:transparent;transition:0.2s ease-in-out}
+	.hamburger:focus{
+		box-shadow: 0 0 0 0;
+		border: 0 none;
+		outline: 0;
+	}
+	.block-bottom{
+		z-index: 10;
+		visibility: hidden;
+		position: absolute;
+		height: 100px;
+		left: 0px;
+		width: 41.02%;
+		height: 200px;
+		bottom:0px;
+		margin-top: -50px;
+		background: #fff;
+	}
+	
+	.text-home div{
+		color: #fff;
+		font-size: 40px;
+		text-transform: uppercase;
+		line-height: 44px;
+		padding: 30px;
+		font-family: 'Lato', sans-serif;
+	}
+	.we-plan{
+		z-index: 5;
+		position: absolute;
+		height: 175px;
+		margin-top: -87.5px;
+		overflow-y: hidden;
+		top: 50%;
+	}
+	.content-menu{
+		display: none;
+		padding-top: 10%;
+	}
+	.menu-icon-container{
+		overflow: hidden;
+		visibility: visible;
+		position: fixed;
+		display: inline-flex;
+		padding: 20px;
+		background-color: #1d1d1b;
+		top: 20px;
+		right: 0;
+		width: 50%;
+	}
+
+	.menu-icon-container a{
+		cursor: pointer;
+		height: 20px;
+	}
+
+	#icon-menu-opened{
+		display: none;
+	}
+	.section-title{
+		text-transform: uppercase;
+		font-family: 'Lato', sans-serif;
+		font-size: 30px;
+		font-weight: bold;
+		padding: 8px;
+
+	}
+	.page-name{
+		display: block;
+		position: absolute;
+		color: #fff;
+		text-transform: lowercase;
+		left: 10%;
+		top: 21px;
+		font-family: 'Lato', sans-serif;
+	}
+	.page-name-view{
+		display: none !important;
+		opacity: 0;
+	}
+
+	/*----------------------- PORTFÓLIO ----------------------- */
+	#info {
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		border-radius:5px;				
+		background:#fcf8e3;
+		border:1px solid  #fbeed5;
+		width:95%;
+		max-width:900px;
+		margin:0 auto 40px auto;
+		font-family:arial;
+		font-size:12px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+	}
+
+	#info .info-wrapper {
+		padding:10px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+
+	}
+
+
+	#info a {
+		color:#c09853;
+		text-decoration:none;
+	}
+
+	#info p {
+		margin:5px 0 0 0;
+	}
+
+
+
+	#filters {
+		margin:1%;
+		padding:0;
+		list-style:none;
+	}
+
+	#filters li {
+		float:left;
+	}
+
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+
+	#filters li span.active {
+		background: #ffd100;
+		color:#fff;
+	}
+
+
+
+	#portfoliolist .portfolio {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		width:23%;
+		margin:1%;
+		display:none;
+		float:left;
+		overflow:hidden;
+	}
+
+	.portfolio-wrapper {
+		overflow:hidden;
+		position: relative !important;
+		background: #ffdf4b;
+		height: 300px;
+		cursor:pointer;
+		-webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+		transition:         all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);	
+	}
+	.viewportfolio{
+		position: absolute;
+		top: 50%;
+		margin-top: -21px;
+		right: 15px;
+		height: 50px;
+		width: 50px;
+
+	}
+	.portfolio img {
+		z-index: 1;
+		max-width:100%;
+		position: relative;
+		top:0;
+		-webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+		transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
+		box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.31);
+	}
+
+	.portfolio-wrapper:hover {
+		padding-right: 80px;
+
+	}
+
+
+	.portfolio .text-category {
+		display:block;
+		font-size:9px;
+	}
+
+
+
+	#portfoliolist .portfolio {
+		width:100%;
+		margin:1%;
+	}		
+
+	#ads {
+		display:none;
+	}
+
+
+	/* END PORTFÓLIO */
+
+
+
+	/* ------------------- ANIMAÇÕES ------------------------- */
+
+	.animacao-titulopagina{
+		animation-name: animacao-tituloPagina;
+		animation-duration: 0.6s;
+		animation-timing-function: cubic-bezier(0.540, 0.095, 0.285, 0.610);
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-titulopagina-boot{
+		animation-name: animacao-titulopagina-boot;
+		animation-duration: 1.0s;
+		animation-timing-function: cubic-bezier(0.540, 0.095, 0.285, 0.610);
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+
+	.animacao-background-home1{
+		animation-name: animacao-background;
+		animation-duration: 1.5s;
+		animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+		animation-delay:1s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-iconcontainer{
+		animation-name: animacao-iconmenu;
+		animation-duration: 2s;
+		animation-timing-function: ease-in;
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-lines{
+		animation-name: lines;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-delay: 1.0s;
+		animation-fill-mode: both;
+	}
+	.animacao-overlay{
+		animation-name: overlay;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+		animation-delay: 2.5s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+
+	.animacao-linebottom{
+		animation-name: linebottom;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-delay: 3s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-lineheight{
+		animation-name: lineheight;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-delay: 3s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-block{
+		animation-name: blockblue;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+		animation-delay: 3.5s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animation-block-bottom{
+		animation-name: blockbottom;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+		animation-delay: 3.0s;
+		animation-direction: alternate;
+		animation-fill-mode: both;
+	}
+
+	.animacao-text{
+		animation-name: animacao;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+		animation-delay: 2.4s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-menu{
+		animation-name: animacaomenu;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+		animation-delay: 0s;
+		overflow: hidden;
+		animation-fill-mode: both;
+	}
+	.animacao-menu-close{
+		animation-name: animacaomenuclose;
+		animation-duration: 1.0s;
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+		animation-delay: 0s;
+		animation-fill-mode: both;
+	}
+	
+}

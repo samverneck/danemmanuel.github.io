@@ -1,0 +1,288 @@
+@import url("animacoes.css");
+@media only screen and (min-width: 1000px) {
+	body{display: block;
+		margin:0 !important;
+		background-color: #F5F5F5;
+
+	}
+	.menu-left{
+		z-index: 4;
+		position: fixed;
+		height: 100vh;
+		width: 6%;
+		overflow: hidden;
+		cursor: pointer;
+		background-color: #fff;
+		margin:0px;
+		border-right: 1px solid #e8e8e8;
+	}
+	.content-menu{
+		background-color: #2D3135;
+		height: 100vh;
+		z-index: 3;
+		width: 0px;
+		position: absolute;
+		overflow: hidden;
+		animation-name: animacaomenuclose;
+		animation-duration: 1.4s;
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+		animation-delay: 0s;
+		animation-fill-mode: both;
+	}
+	.icon-close{
+		display: none;
+		color: #fff;
+	}
+	.icon-menu-close{
+		color: #000;
+		display: none;
+	}
+	.hide{
+		display: none !important;
+	}
+	.visible{
+		display: block !important;
+	}
+	
+	.menu-left .icon-menu, .icon-menu-close{
+		position: fixed;
+		height: 25px;
+		width: 25px;
+		left: 3%;
+		top: 50%;
+		margin: -12.5px 0 0 -12.5px;
+	}
+	.menu-left:hover .icon-menu span:first-child{
+		max-width: 12px;
+	}
+	.menu-left:hover .icon-menu span:nth-child(2){
+		max-width: 18px;
+	}
+	.menu-left:hover .icon-menu span:nth-child(3){
+		max-width: 100%;
+	}
+	.menu-left .icon-menu span{
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: 2px;
+		background-color: #2d3135;
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-ms-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		transition: all 0.2s linear;
+	}
+	.menu-left .icon-menu span:nth-child(2){
+		margin: 5px 0;
+	}
+	.menu-left .icon-menu span:nth-child(3){
+		max-width: 12px;
+	}
+	
+	.menu-list ul{
+		text-decoration: none;
+		list-style: none;
+		width: 150px;
+		height: 230px;
+		padding: 50% 50%;
+		margin-top: -115px;
+		margin-left: -75px;
+	}
+	.menu-list ul li{
+		padding: 10px;
+		font-family: 'Josefin Sans', sans-serif;
+		color: #ff0036;
+		font-size: 30px;
+	}
+
+
+	.menu-left:hover .icon-menu-close span:first-child{
+		transform: rotate(-45deg);
+	}
+	.menu-left:hover .icon-menu-close span:nth-child(2){
+		transform: rotate(45deg);
+	}
+	.menu-left .icon-menu-close span{
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: 2px;
+		background-color: #2d3135;
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-ms-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		transition: all 1.2s linear;
+	}
+	.menu-left .icon-menu-close span:first-child{
+
+		transform: rotate(45deg) translate(2.5px,3px);
+		transition: all 0.2s linear;
+
+	}
+	.menu-left .icon-menu-close span:nth-child(2){
+		transition: all 0.2s linear;
+		transform: rotate(-45deg) translate(-2.5px,1px);
+	}
+
+	
+	
+
+
+
+
+
+
+	.content-page{
+		padding-left: 80px;
+	}
+	.hero{
+		position: relative;
+		height: 100vh;
+		
+		width: 94%;
+		margin-left: 6%;
+		background-color:#F5F5F5;
+	}
+	.content-hero{
+		padding: 150px 0 130px 80px; 
+	}
+	.content-hero .myname{
+		font-family: 'Josefin Sans', sans-serif;
+		color: #ff0036;
+		font-size: 30px;
+	}
+	.content-hero .myprofession{
+		text-transform: uppercase;
+		font-family: 'Oswald', sans-serif;
+		color: #2D3135;
+		font-size: 100px;
+		font-weight: bold;
+	}
+	.content-hero .mydescription{
+		font-family: 'Josefin Sans', sans-serif;
+		color: #2D3135;
+		font-size: 30px;
+	}
+
+
+
+	/* ------------------- ANIMAÇÕES ------------------------- */
+
+	.animacao-titulopagina{
+		animation-name: animacao-tituloPagina;
+		animation-duration: 0.6s;
+		animation-timing-function: cubic-bezier(0.540, 0.095, 0.285, 0.610);
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-titulopagina-boot{
+		animation-name: animacao-titulopagina-boot;
+		animation-duration: 1.0s;
+		animation-timing-function: cubic-bezier(0.540, 0.095, 0.285, 0.610);
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+
+	.animacao-background-home1{
+		animation-name: animacao-background;
+		animation-duration: 1.5s;
+		animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+		animation-delay:1s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-iconcontainer{
+		animation-name: animacao-iconmenu;
+		animation-duration: 2s;
+		animation-timing-function: ease-in;
+		animation-delay:0s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-lines{
+		animation-name: lines;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-delay: 1.0s;
+		animation-fill-mode: both;
+	}
+	.animacao-overlay{
+		animation-name: overlay;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+		animation-delay: 2.5s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+
+	.animacao-linebottom{
+		animation-name: linebottom;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-delay: 3s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-lineheight{
+		animation-name: lineheight;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-delay: 3s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-block{
+		animation-name: blockblue;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+		animation-delay: 3.5s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animation-block-bottom{
+		animation-name: blockbottom;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+		animation-delay: 3.0s;
+		animation-direction: alternate;
+		animation-fill-mode: both;
+	}
+
+	.animacao-text{
+		animation-name: animacao;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+		animation-delay: 2.4s;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: both;
+	}
+	.animacao-menu{
+		animation-name: animacaomenu;
+		animation-duration: 1.4s;
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+		animation-delay: 0s;
+		overflow: hidden;
+		animation-fill-mode: both;
+	}
+	.animacao-menu-close{
+		animation-name: animacaomenuclose;
+		animation-duration: 1.0s;
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+		animation-delay: 0s;
+		animation-fill-mode: both;
+	}
+
+}
