@@ -4,6 +4,7 @@
 	<title></title>
 </head>
 <body>
-<a href="contato">Contato</a>
+CONTATOOO
+<a href="/">Index</a>
 </body>
 </html>
