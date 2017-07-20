@@ -1,5 +1,5 @@
 	@import url("animacoes.css");
-	@media only screen and (min-width: 1000px) and (max-width:1400px) {
+	@media only screen and (min-width: 1000px) and (max-width:1800px) {
 		body{display: block;
 			margin:0 !important;
 			background-color: #F5F5F5;
@@ -169,6 +169,37 @@
 				border: 0 none;
 				outline: 0;
 			}
+			.content-page{
+				width:94%;
+			}
+			
+			.about-me{
+				font-family: 'Josefin Sans', sans-serif;
+				color: #2D3135;
+				font-size:35px;
+				text-transform:uppercase;
+			}
+			.about-me:after{
+				position:absolute;
+				margin-top:20px;
+				margin-left:30px;
+				height:2px;
+				width:57%;
+				content:'';
+				background-color:#ff0036;
+			}
+			#about{
+				padding:50px 10%;
+			}
+			.content-about{
+				text-align:justify;
+			}
+			.myprofession p{
+				font-size:20px;
+				font-weight:none;
+				color: rgba(45, 49, 53, 0.47);
+				margin: 0 0px 30px;
+			}
 			.menu-left{
 				z-index: 4;
 				position: fixed;
@@ -185,13 +216,13 @@
 				height: 100vh;
 				z-index: 3;
 				width: 0px;
-				position: absolute;
+				position: fixed;
 				overflow: hidden;
 				animation-name: animacaomenuclose;
 				animation-duration: 1.0s;
 				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 				border-right: 1px solid #e8e8e8;
-				animation-delay: 1.2s;
+				animation-delay: 0.8s;
 				animation-fill-mode: both;
 			}
 			.content-menu-right{
@@ -206,9 +237,8 @@
 				position: fixed;
 				overflow: hidden;
 				animation-name: animacaomenuright;
-				animation-duration: 1.5s;
+				animation-duration: 1.0s;
 				animation-timing-function: cubic-bezier(0.620, 0.120, 0.610, 1.325);;
-
 				animation-delay: 0s;
 				animation-fill-mode: both;
 			}
@@ -330,8 +360,8 @@
 				text-align:center;
 				color:#fff;
 				width:100%;
-				font-size: 30px;
-				font-family: 'Sacramento', cursive;
+				font-size: 20px;
+				font-family: 'Tenor Sans', sans-serif;
 			}
 			
 			.socialnetworks{
@@ -528,7 +558,7 @@
 			}
 			.animacao-menu{
 				animation-name: animacaomenu;
-				animation-duration: 1.4s;
+				animation-duration: 1.0s;
 				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 				animation-delay: 0s;
 				overflow: hidden;
@@ -536,20 +566,14 @@
 			}
 			.animacao-menu-right{
 				animation-name: animacaomenurightopen;
-				animation-duration: 1.0s;
+				animation-duration: 1s;
 				animation-timing-function: ease;
-				animation-delay: 1.4s;
+				animation-delay: 1.0s;
 				overflow: hidden;
 				animation-fill-mode: both;
 				
 
 			}
-			.animacao-menu-close{
-				animation-name: animacaomenuclose;
-				animation-duration: 0.5s;
-				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-				animation-delay: 1s;
-				animation-fill-mode: both;
-			}
+
 
 		}
