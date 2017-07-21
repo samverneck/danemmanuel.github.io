@@ -1,7 +1,7 @@
 $(document).ready(function(){
 /*
 	$("body").fadeIn(2000);
-	$('.text-home div').addClass('animacao-text');
+	
 	$('.liness').addClass('animacao-lines');
 	$('.background_home1').addClass('animacao-background-home1');
 	$('.page-name').addClass('animacao-titulopagina-boot');
@@ -16,6 +16,7 @@ $(document).ready(function(){
 		window.location = linkLocation;
 	}
 	*/
+
 
 	$(".menu-left").click(function(){
 		$(".content-menu").toggleClass("animacao-menu");

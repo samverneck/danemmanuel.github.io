@@ -193,7 +193,9 @@
 			}
 			.content-about{
 				text-align:justify;
+				font-family: 'Roboto', sans-serif;
 			}
+
 			.myprofession p{
 				font-size:20px;
 				font-weight:none;
@@ -436,7 +438,16 @@
 				font-family: 'Oswald', sans-serif;
 				color: #2D3135;
 				font-size: 100px;
+
+				overflow: hidden;
 				font-weight: bold;
+				animation-name: animacao;
+				animation-duration: 1s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay: 1.5s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
 			}
 			.content-hero .mydescription{
 				font-family: 'Josefin Sans', sans-serif;
@@ -548,13 +559,7 @@
 			}
 
 			.animacao-text{
-				animation-name: animacao;
-				animation-duration: 1s;
-				animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-				animation-delay: 2.4s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
+				
 			}
 			.animacao-menu{
 				animation-name: animacaomenu;
