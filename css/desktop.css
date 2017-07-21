@@ -200,24 +200,22 @@
 			
 			.about-me{
 				font-family: 'Josefin Sans', sans-serif;
-				color: #2D3135;
+				color: #0C1014;
 				font-size:35px;
+				left:6%;
+				padding:6% 6% 6% 100px;
+				position:absolute;
+				background-color:#fff;
 				text-transform:uppercase;
 			}
-			.about-me:after{
-				position:absolute;
-				margin-top:20px;
-				margin-left:30px;
-				height:2px;
-				width:57%;
-				content:'';
-				background-color:#ff0036;
-			}
+			
 			#about{
 				background-color: rgba(0, 0, 0, 0.02);
 				padding:50px 10%;
 			}
 			.content-about{
+				position:absolute;
+				left:100px;
 				text-align:justify;
 				font-family: 'Roboto', sans-serif;
 			}
