@@ -1,7 +1,7 @@
 @media only screen and (min-width: 760px) {
 	@keyframes animacao {
 		from {
-			transform: translateY(-200%);
+			transform: translateY(-300%);
 
 		}
 		to { 

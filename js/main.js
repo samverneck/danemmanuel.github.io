@@ -16,7 +16,7 @@ $(document).ready(function(){
 		window.location = linkLocation;
 	}
 	*/
-
+	$('.content-hero').addClass('animacao-profession');
 
 	$(".menu-left").click(function(){
 		$(".content-menu").toggleClass("animacao-menu");
