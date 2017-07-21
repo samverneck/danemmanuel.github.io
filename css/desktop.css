@@ -81,6 +81,31 @@
 			font-size:100%;
 			padding:0.2em 0.4em;
 		}
+
+		.ilustracao .engrenagem-pequena {
+			-webkit-transform-origin: 297px 309px;
+			-moz-transform-origin: 297px 309px;
+			-o-transform-origin: 297px 309px;
+			-ms-transform-origin: 297px 309px;
+			transform-origin: 297px 309px;
+			-webkit-animation: spin 9s linear infinite;
+			-moz-animation: spin 9s linear infinite;
+			-o-animation: spin 9s linear infinite;
+			-ms-animation: spin 9s linear infinite;
+			animation: spin 9s linear infinite;
+		}
+		.ilustracao .engrenagem-grande {
+			-webkit-transform-origin: 266px 226px;
+			-moz-transform-origin: 266px 226px;
+			-o-transform-origin: 266px 226px;
+			-ms-transform-origin: 266px 226px;
+			transform-origin: 266px 226px;
+			-webkit-animation: ant-spin 9s linear infinite;
+			-moz-animation: ant-spin 9s linear infinite;
+			-o-animation: ant-spin 9s linear infinite;
+			-ms-animation: ant-spin 9s linear infinite;
+			animation: ant-spin 9s linear infinite;
+		}
 		.square:before,.square:after{
 			content: "";
 			box-sizing:border-box;
@@ -233,7 +258,7 @@
 				height: 100vh;
 				width:50vh;
 				left:50%;
-				z-index: 2;
+				z-index: 3;
 				position: fixed;
 				overflow: hidden;
 				animation-name: animacaomenuright;
@@ -415,15 +440,34 @@
 			.content-page{
 				padding-left: 80px;
 			}
-			.hero{
-				position: relative;
+			.overlay-hero{
+				position: absolute;
 				height: 100vh;
+				background: #141414; /* For browsers that do not support gradients */
+				background: -webkit-linear-gradient(to right, #141414 50%, transparent); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(to right, #141414 50%, transparent); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(to right, #141414 50%, transparentto right, #141414 50%, transparent); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(to right, #000 30%, transparent); /* Standard syntax */
+				opacity:1;
+				z-index:1;
 				width: 94%;
 				margin-left: 6%;
-				background-color:#141414;
 			}
+			.hero{
+				display:none;
+				position: relative;
+				height: 100vh;
+				background-image: url(../img/code.jpg);
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+				width: 94%;
+				margin-left: 6%;
+			}
+			
 			.content-hero{
 				position: absolute;
+				z-index:1;
 				width: 820px;
 				height: 280px;
 				left: 40%;
@@ -446,7 +490,7 @@
 			}
 			.content-hero .mydescription{
 				font-family: 'Josefin Sans', sans-serif;
-			    color: rgba(255, 255, 255, 0.64);
+				color: rgba(255, 255, 255, 0.64);
 				font-size: 30px;
 			}
 
@@ -457,7 +501,7 @@
 				animation-name: animacao;
 				animation-duration: 1s;
 				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-				animation-delay: 1.5s;
+				animation-delay: 2.5s;
 				animation-direction: alternate;
 				animation-play-state: running;
 				animation-fill-mode: both;
@@ -490,15 +534,7 @@
 				animation-fill-mode: both;
 			}
 
-			.animacao-background-home1{
-				animation-name: animacao-background;
-				animation-duration: 1.5s;
-				animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-				animation-delay:1s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
+			
 			.animacao-iconcontainer{
 				animation-name: animacao-iconmenu;
 				animation-duration: 2s;
@@ -515,10 +551,19 @@
 				animation-delay: 1.0s;
 				animation-fill-mode: both;
 			}
+			.animacao-background-home1{
+				animation-name: animacao-background;
+				animation-duration: 2.0s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay:1s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
+			}
 			.animacao-overlay{
 				animation-name: overlay;
-				animation-duration: 1s;
-				animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+				animation-duration: 0.5s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 				animation-delay: 2.5s;
 				animation-direction: alternate;
 				animation-play-state: running;

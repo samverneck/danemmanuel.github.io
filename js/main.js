@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$("body").fadeIn(2000);
 	
 	$('.liness').addClass('animacao-lines');
-	$('.background_home1').addClass('animacao-background-home1');
+
 	$('.page-name').addClass('animacao-titulopagina-boot');
 
 	$(".menu-item a").click(function(event){
@@ -17,6 +17,9 @@ $(document).ready(function(){
 	}
 	*/
 	$('.content-hero').addClass('animacao-profession');
+	$('.overlay-hero').addClass('animacao-background-home1');
+	$('.hero').fadeIn(3000);
+
 
 	$(".menu-left").click(function(){
 		$(".content-menu").toggleClass("animacao-menu");
@@ -26,12 +29,12 @@ $(document).ready(function(){
 		$(".menu-list ul").toggleClass("animacao-menu-list");
 	});
 
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
+	$(function() {
+		$('a[href*=#]').on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+		});
+	});
 	
 	$('.menu-left').click(function(){
 		var hamburger = $('.hamburger');

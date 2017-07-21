@@ -1,15 +1,33 @@
 @media only screen and (min-width: 760px) {
 	@keyframes animacao {
 		from {
+
 			transform: translateY(-300%);
 
 		}
 		to { 
+
 			transform: translateY(0);
 			visibility: visible;
 
 		}
 	}
+	@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@keyframes ant-spin {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+}
 
 	@keyframes animacao-menulist {
 		from {
@@ -24,10 +42,10 @@
 
 	@keyframes animacao-background {
 		from {
-			top: -100%; 
+			left: -100%; 
 		}
 		to { 
-			top: 0;
+			left: 0;
 			visibility: visible;
 		}
 	}
