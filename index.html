@@ -7,16 +7,28 @@
 	<link rel="stylesheet" href="css/desktop.css">
 	<link rel="stylesheet" href="css/mobile.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Tenor+Sans|Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 
 	<script src="js/main.js"></script>
 	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
 
 	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+
 </head>
 
 <body>
+	<script>
+		var $doc = $('html, body');
+		$('a').click(function() {
+			$doc.animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top
+			}, 500, 'slow');
+			return false;
+		});
+	</script>
 	<div class="menu-left">
 
 		<div class="hamburger-holder"> <button class="hamburger" type="button">  <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button> </div>
@@ -52,7 +64,7 @@
 		</div>
 		
 	</div>
-<div class="overlay-hero"></div>
+	<div class="overlay-hero"></div>
 	<div class="hero">
 		<div class="content-hero">
 			<div class="myname">Dan Vieira</div>
@@ -63,24 +75,36 @@
 			<div class="mydescription">
 				Fico feliz em poder me apresentar melhor à você.
 			</div>
-
+		</div>
+		<div class="scrolldown">
+			<a href="#main">
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48">
+				<g class="nc-icon-wrapper" fill="#fff">
+						<path d="M22 36V12L5 24l17 12zm1-12l17 12V12L23 24z"></path>
+					</g>
+				</svg>
+			</a>
 		</div>
 	</div>
 
 
-	<div class="content-page">
+	<div class="content-page" id="main">
+		<h1 class="about-me">
+			Sobre mim
+		</h1>
 		<section id="about">
-			<h1 class="about-me">
-				Sobre mim
-			</h1>
-			<p class="content-about">
-				Em 2015 iniciei minha carreira profissional em um projeto onde fazia dos meus conhecimentos em web design uma fonte de renda, vendendo identidade visual, sites e lojas virtuais principalmente para comércios. Nesta experiência um tanto empreendedora, pude descobrir e aprender técnicas essenciais para uma boa negociação e posteriormente uma boa relação com clientes. <br><br>
+			<div class="row">
+				<div class="col-md-6">
+					<p class="content-about">
+						Em 2015 iniciei minha carreira profissional em um projeto onde fazia dos meus conhecimentos em web design uma fonte de renda, vendendo identidade visual, sites e lojas virtuais principalmente para comércios. Nesta experiência um tanto empreendedora, pude descobrir e aprender técnicas essenciais para uma boa negociação e posteriormente uma boa relação com clientes. <br><br>
 
-				Neste mesmo ano iniciei minha graduação em Tecnologia em Analise e Desenvolvimento de Sistemas pela Universidade São Francisco, em Itatiba. Pude conceitualizar todo o conhecimento que havia adquirido superficialmente em um curso de web design pela Microcamp, e conhecer novas possibilidades e tecnologias que futuramente seriam de extrema importância em minha carreira.<br><br>
+						Neste mesmo ano iniciei minha graduação em Tecnologia em Analise e Desenvolvimento de Sistemas pela Universidade São Francisco, em Itatiba. Pude conceitualizar todo o conhecimento que havia adquirido superficialmente em um curso de web design pela Microcamp, e conhecer novas possibilidades e tecnologias que futuramente seriam de extrema importância em minha carreira.<br><br>
 
-				Em 2016 mudei minha meta de vida e fui atrás de algo mais estável na área de desenvolvimento. Atuando como Social Media em uma empresa de publicidade (Cantinho Empreendedor) pude expandir meus conhecimentos em design e tive a oportunidade de mostrar meus conhecimentos como desenvolvedor. Após 2 meses como social media fui para a área de desenvolvimento de sites, onde tive a oportunidade de aprender com pessoas mais experientes.<br><br>
-				Um ano depois consegui uma ótima oportunidade para entrar para o time de desenvolvedores em uma renomada agencia de comunicação em Itatiba (Oxigenium), onde estou até o momento.
-			</p>
+						Em 2016 mudei minha meta de vida e fui atrás de algo mais estável na área de desenvolvimento. Atuando como Social Media em uma empresa de publicidade (Cantinho Empreendedor) pude expandir meus conhecimentos em design e tive a oportunidade de mostrar meus conhecimentos como desenvolvedor. Após 2 meses como social media fui para a área de desenvolvimento de sites, onde tive a oportunidade de aprender com pessoas mais experientes.<br><br>
+						Um ano depois consegui uma ótima oportunidade para entrar para o time de desenvolvedores em uma renomada agencia de comunicação em Itatiba (Oxigenium), onde estou até o momento.
+					</p>
+				</div>
+			</div>
 
 		</section>
 	</div>

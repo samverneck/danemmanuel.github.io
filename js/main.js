@@ -1,6 +1,6 @@
 $(document).ready(function(){
 /*
-	$("body").fadeIn(2000);
+
 	
 	$('.liness').addClass('animacao-lines');
 
@@ -16,6 +16,7 @@ $(document).ready(function(){
 		window.location = linkLocation;
 	}
 	*/
+		$("body").fadeIn(2000);
 	$('.content-hero').addClass('animacao-profession');
 	$('.overlay-hero').addClass('animacao-background-home1');
 	$('.hero').fadeIn(3000);
