@@ -23,9 +23,11 @@ $(document).ready(function(){
 
 	$(".btn-vida").mouseover(function(){
 		$('.vida-text').addClass('vida-text-show');
+		$('.nc-icon-wrapper').fadeOut();
 
 	}).mouseleave(function() {
 		$('.vida-text').removeClass('vida-text-show');
+		$('.nc-icon-wrapper').fadeIn();
 	});
 
 	$(".menu-left").click(function(){
