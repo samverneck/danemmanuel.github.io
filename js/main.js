@@ -16,11 +16,17 @@ $(document).ready(function(){
 		window.location = linkLocation;
 	}
 	*/
-		$("body").fadeIn(2000);
+	$("body").fadeIn(2000);
 	$('.content-hero').addClass('animacao-profession');
 	$('.overlay-hero').addClass('animacao-background-home1');
 	$('.hero').fadeIn(3000);
 
+	$(".btn-vida").mouseover(function(){
+		$('.vida-text').addClass('vida-text-show');
+
+	}).mouseleave(function() {
+		$('.vida-text').removeClass('vida-text-show');
+	});
 
 	$(".menu-left").click(function(){
 		$(".content-menu").toggleClass("animacao-menu");

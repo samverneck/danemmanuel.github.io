@@ -1,8 +1,57 @@
 @media only screen and (min-width: 760px) {
 	@keyframes scrolldown {
-    from {bottom:60px;}
-    to {bottom:50px;}
-}
+		from {bottom:60px;}
+		to {bottom:50px;}
+	}
+
+	@keyframes vidatext {
+		from {
+
+			width: 0px;
+			
+		}
+		to { 
+
+			width: 35%;
+			
+		
+
+		}
+	}
+	@keyframes btn-vida{
+
+		from {
+			opacity: 0;
+			height: 105vh;
+	
+			
+		}
+		to { 
+			opacity: 1;
+			top: 100%;
+			height: 105vh;
+			
+		
+
+		}
+	}
+
+	@keyframes btn-vida-close{
+
+		from {
+			
+			height: 105px;
+			top: 100%;
+		}
+		to { 
+			top: 150%;
+			height: 50px;
+			
+		
+
+		}
+	}
+
 	@keyframes animacao {
 		from {
 

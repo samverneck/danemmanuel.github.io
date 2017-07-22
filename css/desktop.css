@@ -203,9 +203,9 @@
 				font-family: 'Josefin Sans', sans-serif;
 				color: #0A0E11;
 				font-size:35px;
-				padding:30px 30px 30px 100px;
+				padding:30px 29px 30px 10%;
 				width: 200px;
-				margin-top: 0px;
+				margin-top: 40px;
 				background-color:#fff;
 				text-transform:uppercase;
 			}
@@ -213,17 +213,94 @@
 				position: absolute;
 				bottom: 50px;
 				z-index: 2;
-				left: 46%;
+				right:50px;
 				transform: rotate(-90deg);
 				animation: scrolldown 1s infinite;
 			}
+			.vida{
+				position: absolute;
+				height: 105vh;
+				right: 0px;
+				top: 100%;
+				background-image: url(../img/vida.jpg);
+				background-position: center center;
+				background-size: cover;
+				width: 35%;
+				background-attachment: fixed;
+			}
+			.vida-text{
+			opacity: 0;
+			overflow: hidden;
 
+			}
+			.vida-text-show p{
+				color: #fff;
+				text-align: left;
+				font-family: 'Josefin Sans', sans-serif;
+				padding:50px; 
+				font-size: 30px;
+				background-color: #23303a;
+
+			}
+			.vida-text-show{
+				position: absolute;
+				height: 105vh;
+				right: 0px;
+				width: 35%;
+				top: 100%;
+				background-color: #172027;
+				opacity: 1;
+				animation-name: vidatext;
+				animation-duration: 0.5s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay: 0.5s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
+			}
+			.btn-vida{
+				animation-name: btn-vida-close;
+				animation-duration: 0.5s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay: 0s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
+				position: absolute;
+				z-index: 9;
+				right: 0;
+				width: 50px;
+				background-color: #172027;
+
+			}
+			.btn-vida:hover{
+					    border-left: 1px solid #fff;
+				animation-name: btn-vida;
+				animation-duration: 0.5s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay: 0s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
+
+
+			}
 			.scrolldown a{
 
 				color: #fff;
 				font-family: 'Josefin Sans', sans-serif;
 			}
-			
+			.lessismoreicon{
+				text-align: center;
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 60px;
+				position: absolute;
+				top: 100px;
+				left: 50%;
+			}
+			.lessismoreicon p{
+				font-size: 30px;
+			}
 			#about{
 				padding:10px 10%;
 			}
