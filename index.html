@@ -3,19 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+	<!--<link rel="stylesheet" href="css/bigdesktop.css">-->
 	<link rel="stylesheet" href="css/desktop.css">
 	<link rel="stylesheet" href="css/mobile.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Tenor+Sans|Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 
 	<script src="js/main.js"></script>
 	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
 
-	<title></title>
+	<title>Dan | Web Developer</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-
+	<script>
+		document.documentElement.className = 'js';
+	</script>
 
 </head>
 
@@ -23,7 +26,13 @@
 
 	<div class="menu-left">
 
-		<div class="hamburger-holder"> <button class="hamburger" type="button">  <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button> </div>
+		<div class="hamburger-holder">
+			<button class="hamburger" type="button">  
+				<span class="hamburger-box"> 
+					<span class="hamburger-inner"></span> 
+				</span> 
+			</button>
+		</div>
 
 
 	</div>
@@ -31,9 +40,9 @@
 		
 		<div class="menu-list">
 			<ul>
-				<li> <a class="first after" href="#">home</a></li>
+				<li> <a class="first after" href="index.html">home</a></li>
 				<li> <a class="first after" href="#">portfólio</a></li>
-				<li> <a class="first after" href="#">sobre mim</a></li>
+				<li> <a class="first after" href="#about">sobre mim</a></li>
 				<li> <a class="first after" href="#">contato</a></li>
 			</ul>
 		</div>
@@ -56,8 +65,7 @@
 		</div>
 		
 	</div>
-	<div class="overlay-hero"></div>
-	<div class="hero">
+	<div class="overlay-hero btn--trigger">
 		<div class="content-hero">
 			<div class="myname">Dan Vieira</div>
 			<div class="myprofession">
@@ -77,13 +85,16 @@
 				</svg>
 			</a>
 		</div>
+	</div>
+	<div class="hero segmenter" style="background-image: url(img/code.jpg)">
+	
 
 	</div>
 	
 
 	<div class="content-page" id="main">
 		<h1 class="about-me">
-			Sobre mim
+			Sobre mim 	
 		</h1>
 		<section id="about">
 			
@@ -101,14 +112,7 @@
 
 				</div>
 			</div>
-			<div class="btn-vida">
-				<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-					<g class="nc-icon-wrapper" fill="#fff">
-						<path d="M40 4H8C5.79 4 4.02 5.79 4.02 8L4 44l8-8h28c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zM12 18h24v4H12v-4zm16 10H12v-4h16v4zm8-12H12v-4h24v4z"></path>
-					</g>
-				</svg>
-
-			</div>
+			<!--	<div class="btn-vida"></div> -->
 			<div class="vida"></div>
 
 			<div class="vida-text">
@@ -117,11 +121,14 @@
 				</div>
 			</section>
 
-
+			
 		</div>
 
 
 		<footer>
+			<script src="js/anime.min.js"></script>
+			<script src="js/imagesloaded.pkgd.min.js"></script>
+			<script src="js/main2.js"></script>
 			<script>
 				$('a[href^="#"]').on('click', function(event) {
 					var target = $(this.getAttribute('href'));
@@ -132,6 +139,35 @@
 						}, 2000);
 					}
 				});
+			</script>
+
+			<script>
+				(function() {
+					var headline = document.querySelector('.trigger-headline'),
+					trigger = document.querySelector('.btn--trigger'),
+					segmenter = new Segmenter(document.querySelector('.segmenter'), {
+						pieces: 2,
+						animation: {
+							duration: 1000,
+							easing: 'easeInOutExpo',
+							delay: 100,
+							translateZ: 50
+						},
+						parallax: true,
+						positions: [
+						{top: 70, left: 0, width: 45, height: 45},
+						{top: 25, left: 55, width: 45, height: 45}
+						],
+						onReady: function() {
+							trigger.classList.remove('btn--hidden');
+							trigger.addEventListener('mouseover', function() {
+								segmenter.animate();
+								headline.classList.remove('trigger-headline--hidden');
+								this.classList.add('btn--hidden');
+							});
+						}
+					});
+				})();
 			</script>
 		</footer>
 	</body>

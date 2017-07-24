@@ -1,8 +1,8 @@
 	@import url("animacoes.css");
 	@media only screen and (min-width: 1800px) {
-		body{display: block;
+		body{display: none;
 			margin:0 !important;
-			background-color: #F5F5F5;
+			background-color: rgba(0, 0, 0, 0.04);
 
 		}
 		a{
@@ -80,6 +80,31 @@
 			position:static;
 			font-size:100%;
 			padding:0.2em 0.4em;
+		}
+
+		.ilustracao .engrenagem-pequena {
+			-webkit-transform-origin: 297px 309px;
+			-moz-transform-origin: 297px 309px;
+			-o-transform-origin: 297px 309px;
+			-ms-transform-origin: 297px 309px;
+			transform-origin: 297px 309px;
+			-webkit-animation: spin 9s linear infinite;
+			-moz-animation: spin 9s linear infinite;
+			-o-animation: spin 9s linear infinite;
+			-ms-animation: spin 9s linear infinite;
+			animation: spin 9s linear infinite;
+		}
+		.ilustracao .engrenagem-grande {
+			-webkit-transform-origin: 266px 226px;
+			-moz-transform-origin: 266px 226px;
+			-o-transform-origin: 266px 226px;
+			-ms-transform-origin: 266px 226px;
+			transform-origin: 266px 226px;
+			-webkit-animation: ant-spin 9s linear infinite;
+			-moz-animation: ant-spin 9s linear infinite;
+			-o-animation: ant-spin 9s linear infinite;
+			-ms-animation: ant-spin 9s linear infinite;
+			animation: ant-spin 9s linear infinite;
 		}
 		.square:before,.square:after{
 			content: "";
@@ -169,6 +194,127 @@
 				border: 0 none;
 				outline: 0;
 			}
+			.content-page{
+				width:94%;
+				padding-left: 80px;
+			}
+			
+			.about-me{
+				font-family: 'Josefin Sans', sans-serif;
+				color: #0A0E11;
+				font-size:35px;
+				padding:30px 29px 30px 10%;
+				width: 200px;
+				
+				background-color:#fff;
+				text-transform:uppercase;
+			}
+			.scrolldown{
+				position: absolute;
+				bottom: 50px;
+				z-index: 2;
+				right:50px;
+				transform: rotate(-90deg);
+				animation: scrolldown 1s infinite;
+			}
+			.vida{
+				position: absolute;
+				height: 100%;
+				right: 0px;
+				top: 100%;
+				background-image: url(../img/vida.jpg);
+				background-position: center center;
+				background-size: cover;
+				width: 35%;
+				background-attachment: fixed;
+
+			}
+			.vida-text{
+				opacity: 0;
+
+				overflow: hidden;
+
+			}
+			.vida-text-show p{
+				color: #fff;
+				text-align: left;
+				font-family: 'Josefin Sans', sans-serif;
+				padding:50px; 
+				font-size: 30px;
+				background-color: #23303a;
+
+
+			}
+			.vida-text-show{
+				position: absolute;
+				height: 105vh;
+				right: 0px;
+				width: 35%;
+				top: 100%;
+				background-color: #172027;
+				opacity: 1;
+				animation-name: vidatext;
+				animation-duration: 0.5s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay: 0.5s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
+			}
+			.btn-vida{
+				position: absolute;
+				top:150%;
+				height:50px;
+				z-index: 9;
+				right: 0px;
+
+				border-radius:50%;
+				width: 50px;
+				background-color: #172027;
+			}
+			.btn-vida:hover{
+				border-left: 1px solid #fff;
+				animation-name: btn-vida;
+				animation-duration: 0.5s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay: 0s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
+
+
+			}
+			.scrolldown a{
+
+				color: #fff;
+				font-family: 'Josefin Sans', sans-serif;
+			}
+			.lessismoreicon{
+				text-align: center;
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 60px;
+				position: absolute;
+				top: 100px;
+				left: 50%;
+			}
+			.lessismoreicon p{
+				font-size: 30px;
+			}
+			#about{
+				padding:10px 10%;
+			}
+			.content-about{
+				font-size: 1.5em;
+				text-align:justify;
+				font-family: 'Roboto', sans-serif;
+			}
+
+			.myprofession p{
+				font-size:20px;
+				font-weight:none;
+				color: #fff;
+				margin: 0 0px 30px;
+			}
 			.menu-left{
 				z-index: 4;
 				position: fixed;
@@ -185,7 +331,7 @@
 				height: 100vh;
 				z-index: 3;
 				width: 0px;
-				position: absolute;
+				position: fixed;
 				overflow: hidden;
 				animation-name: animacaomenuclose;
 				animation-duration: 1.0s;
@@ -195,14 +341,11 @@
 				animation-fill-mode: both;
 			}
 			.content-menu-right{
-				background-image: url(../img/background-right.jpg);
-				background-position: center center;
-				background-attachment: fixed;
-				background-size: cover;
+				background-color:#2e2e2e;
 				height: 100vh;
 				width:50vh;
 				left:50%;
-				z-index: 2;
+				z-index: 3;
 				position: fixed;
 				overflow: hidden;
 				animation-name: animacaomenuright;
@@ -377,23 +520,40 @@
 				font-size:50px !important;
 			}
 
-
-
-
-
-			.content-page{
-				padding-left: 80px;
-			}
-			.hero{
-				position: relative;
+			.overlay-hero{
+				position: absolute;
 				height: 100vh;
-
+				background: #141414; /* For browsers that do not support gradients */
+				background: -webkit-linear-gradient(to right, #141414 50%, transparent); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(to right, #141414 50%, transparent); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(to right, #141414 50%, transparentto right, #141414 50%, transparent); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(to right, #000 30%, transparent); /* Standard syntax */
+				opacity:1;
+				z-index:1;
 				width: 94%;
 				margin-left: 6%;
-				background-color:#F5F5F5;
 			}
+			.hero{
+				display:none;
+				position: relative;
+				height: 100vh;
+				background-image: url(../img/code.jpg);
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+				width: 94%;
+				margin-left: 6%;
+			}
+			
 			.content-hero{
-				padding: 150px 0 130px 80px; 
+				position: absolute;
+				z-index:1;
+				width: 820px;
+				height: 280px;
+				left: 40%;
+				top: 50%;
+				margin-left: -410px;
+				margin-top: -140px;
 			}
 			.content-hero .myname{
 				font-family: 'Josefin Sans', sans-serif;
@@ -403,20 +563,29 @@
 			.content-hero .myprofession{
 				text-transform: uppercase;
 				font-family: 'Oswald', sans-serif;
-				color: #2D3135;
+				color: #ebebeb;
 				font-size: 100px;
+				overflow: hidden;
 				font-weight: bold;
 			}
 			.content-hero .mydescription{
 				font-family: 'Josefin Sans', sans-serif;
-				color: #2D3135;
+				color: rgba(255, 255, 255, 0.64);
 				font-size: 30px;
 			}
 
 
 
 			/* ------------------- ANIMAÇÕES ------------------------- */
-
+			.animacao-profession{
+				animation-name: animacao;
+				animation-duration: 1s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay: 2.5s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
+			}
 			.animacao-titulopagina{
 				animation-name: animacao-tituloPagina;
 				animation-duration: 0.6s;
@@ -445,15 +614,7 @@
 				animation-fill-mode: both;
 			}
 
-			.animacao-background-home1{
-				animation-name: animacao-background;
-				animation-duration: 1.5s;
-				animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-				animation-delay:1s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
+			
 			.animacao-iconcontainer{
 				animation-name: animacao-iconmenu;
 				animation-duration: 2s;
@@ -470,10 +631,19 @@
 				animation-delay: 1.0s;
 				animation-fill-mode: both;
 			}
+			.animacao-background-home1{
+				animation-name: animacao-background;
+				animation-duration: 2.0s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+				animation-delay:1s;
+				animation-direction: alternate;
+				animation-play-state: running;
+				animation-fill-mode: both;
+			}
 			.animacao-overlay{
 				animation-name: overlay;
-				animation-duration: 1s;
-				animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+				animation-duration: 0.5s;
+				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 				animation-delay: 2.5s;
 				animation-direction: alternate;
 				animation-play-state: running;
@@ -517,13 +687,7 @@
 			}
 
 			.animacao-text{
-				animation-name: animacao;
-				animation-duration: 1s;
-				animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-				animation-delay: 2.4s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
+				
 			}
 			.animacao-menu{
 				animation-name: animacaomenu;
@@ -543,6 +707,6 @@
 				
 
 			}
-		
+
 
 		}

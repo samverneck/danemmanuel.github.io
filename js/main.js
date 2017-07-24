@@ -16,6 +16,18 @@ $(document).ready(function(){
 		window.location = linkLocation;
 	}
 	*/
+	$(".menu-list ul li a").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+
+
+
 	$("body").fadeIn(2000);
 	$('.content-hero').addClass('animacao-profession');
 	$('.overlay-hero').addClass('animacao-background-home1');
@@ -37,6 +49,8 @@ $(document).ready(function(){
 		$(".icon-menu-close").toggleClass("visible");
 		$(".menu-list ul").toggleClass("animacao-menu-list");
 	});
+
+	
 
 	$(function() {
 		$('a[href*=#]').on('click', function(e) {
