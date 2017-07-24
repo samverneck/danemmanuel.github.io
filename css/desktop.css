@@ -304,6 +304,7 @@
 				font-size: 30px;
 			}
 			#about{
+				height: 100vh;
 				padding:10px 10%;
 			}
 			.content-about{
