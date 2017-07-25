@@ -136,10 +136,10 @@
 
 		from {
 
-			width: 3%;
+			width: 0%;
 		}
 		to { 
-			width: 50%;
+			width: 100%;
 		}
 
 	}
@@ -147,11 +147,11 @@
 
 		from {
 
-			width: 50%;
+			width: 100%;
 		}
 		to { 
 
-			width: 6%;
+			width: 0%;
 		}
 
 	}

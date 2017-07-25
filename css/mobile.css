@@ -1,611 +1,621 @@
 @import url("animacoesMobile.css");
 @media only screen and (min-width : 100px) and (max-width : 760px) {
-		body{display: block;
-			margin:0 !important;
-			background-color: #F5F5F5;
+	body{display: block;
+		margin:0 !important;
+		background-color: #F5F5F5;
+
+	}
+	a{
+		color:#2D3135;
+	}
+	a,a:visited,a:hover,a:active{
+		-webkit-backface-visibility:hidden;
+		backface-visibility:hidden;
+		position:relative;
+		transition:0.5s color ease;
+		text-decoration:none;
+
+	}
+	a:hover{
+		color:#2D3135;
+	}
+	a.before:before,a.after:after{
+		content: "";
+		transition:0.5s all ease;
+		-webkit-backface-visibility:hidden;
+		backface-visibility:hidden;
+		position:absolute;
+	}
+	a.before:before{
+		top:-0.25em;
+	}
+	a.after:after{
+		bottom:-0.25em;
+	}
+	a.before:before,a.after:after{
+		height:2px;
+		width:0;
+		background:#d73444;
+	}
+	a.first:after{
+		left:0;
+	}
+	a.second:after{
+		right:0;
+	}
+	a.third:after,a.sixth:before,a.sixth:after{
+		left:50%;
+		-webkit-transform:translateX(-50%);
+		transform:translateX(-50%);
+	}
+	a.fourth:before,a.fourth:after{
+		left:0;
+	}
+	a.fifth:before,a.fifth:after{
+		right:0;
+	}
+	a.seventh:before{
+		right:0;
+	}
+	a.seventh:after{
+		left:0;
+	}
+	a.eigth:before{
+		left:0;
+	}
+	a.eigth:after{
+		right:0;
+	}
+	a.before:hover:before,a.after:hover:after{
+		width:100%;
+	}
+	.overlay-hero{
+		position: absolute;
+		height: 100vh;
+		background: #141414; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(to right, #141414 50%, transparent); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(to right, #141414 50%, transparent); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(to right, #141414 50%, transparentto right, #141414 50%, transparent); /* For Firefox 3.6 to 15 */
+		    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.83) 50%, transparent);
+		opacity:1;
+		z-index:1;
+		width: 100%;
+	}
+	.square{
+		box-sizing:border-box;
+		margin-left:-0.4em;
+		position:relative;
+		font-size:2.5em;
+		overflow:hidden;
+	}
+	.square a{
+		position:static;
+		font-size:100%;
+		padding:0.2em 0.4em;
+	}
+
+	.ilustracao .engrenagem-pequena {
+		-webkit-transform-origin: 297px 309px;
+		-moz-transform-origin: 297px 309px;
+		-o-transform-origin: 297px 309px;
+		-ms-transform-origin: 297px 309px;
+		transform-origin: 297px 309px;
+		-webkit-animation: spin 9s linear infinite;
+		-moz-animation: spin 9s linear infinite;
+		-o-animation: spin 9s linear infinite;
+		-ms-animation: spin 9s linear infinite;
+		animation: spin 9s linear infinite;
+	}
+	.ilustracao .engrenagem-grande {
+		-webkit-transform-origin: 266px 226px;
+		-moz-transform-origin: 266px 226px;
+		-o-transform-origin: 266px 226px;
+		-ms-transform-origin: 266px 226px;
+		transform-origin: 266px 226px;
+		-webkit-animation: ant-spin 9s linear infinite;
+		-moz-animation: ant-spin 9s linear infinite;
+		-o-animation: ant-spin 9s linear infinite;
+		-ms-animation: ant-spin 9s linear infinite;
+		animation: ant-spin 9s linear infinite;
+	}
+	.square:before,.square:after{
+		content: "";
+		box-sizing:border-box;
+		transition:0.25s all ease;
+		-webkit-backface-visibility:hidden;
+		backface-visibility:hidden;
+		position:absolute;
+		width:5px;
+		width:0.35rem;
+		height:0;
+		background:#d73444;
+	}
+	.vida-text{
+		display: none;
+	}
+	.square:before{
+		left:0;
+		bottom:-0.2em;
+	}
+	.square.individual:before{
+		transition-delay:0.6s;
+	}
+	.square:after{
+		right:0;
+		top:-0.2em;
+	}
+	.square.individual:after{
+		transition-delay:0.2s;
+	}
+	.square a:before{
+		left:0;
+		transition:0.25s all ease;
+	}
+	.square a:after{
+		right:0;
+		transition:0.25s all ease;
+	}
+	.square.individual a:after{
+		transition:0.25s all ease 0.4s;
+	}
+	.square:hover:before,.square:hover:after{
+		height:calc(100% + 0.4em);
+	}
+	.square:hover a:before,.square:hover a:after{
+		width:100%;
+	}
+	.hamburger{
+		padding: 0;
+		display: inline-block;
+		cursor: pointer;
+		transition-property: opacity, filter;
+		transition-duration: 0.60s;
+		transition-timing-function: linear;
+		font: inherit;
+		color: inherit;
+		text-transform: none;
+		background-color: transparent;
+		border: 0;
+		position: absolute;
+		margin: 0;
+		overflow: visible;
+		top: 50%;
+		margin-left: -15px;
+		margin-top: -5px;
+		left: 50%;
+		}.hamburger .texto{display:none;margin-right:15px;text-transform:uppercase;font-family:"coves_bold";transition:.15s ease}
+		.hamburger .hamburger-box{width:30px;height:18px;vertical-align:middle;display:inline-block;position:relative}
+		.hamburger .hamburger-inner{display:block;top:50%;margin-top:-2px;top:2px}
+		.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{content:"";display:block}
+		.hamburger .hamburger-inner::before{top:8px;transition-property:transform, opacity;transition-timing-function:ease;transition-duration:0.2s}
+		.hamburger .hamburger-inner::after{top:16px}
+		.hamburger .hamburger-inner,.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{width:30px;height:2px;background-color:#000;position:absolute;transition-property:transform;transition-duration:0.60s;transition-timing-function:ease}
+		.hamburger.ativo .texto{color:#000}
+		.hamburger.ativo .hamburger-inner{transform:translate3d(0, 0px, 0) rotate(45deg)}
+		.hamburger.ativo .hamburger-inner::before{transform:rotate(0deg) translate3d(-105.71429px, 0px, 0);opacity:0;transition:.55s ease;}
+		.hamburger.ativo .hamburger-inner::after{transform:translate3d(0, -16px, 0) rotate(-90deg)}
+		.hamburger:hover:not(.ativo) .texto, .menu-left:hover{color:#FFD000}
+		.hamburger:hover:not(.ativo) .hamburger-inner, .menu-left:hover{transform:translateX(3px)}
+		.hamburger:hover:not(.ativo) .hamburger-inner::before, .menu-left:hover{transform:translateX(-6px)}
+		.hamburger:hover:not(.ativo) .hamburger-inner::after, .menu-left:hover{transform:translateX(0px)}
+		@media only screen and (min-width: 768px){
+			.hamburger .texto{display:inline-block}
+			.hamburger .hamburger-box{width:30px}
+			.hamburger .hamburger-inner,.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{width:30px}
+		}
+		.btn{padding:7.5px 15px;border:1px solid transparent;display:inline-block;position:relative;font-size:18px;background-color:transparent;transition:0.5s ease-in-out}
+		.hamburger:focus{
+			box-shadow: 0 0 0 0;
+			border: 0 none;
+			outline: 0;
+		}
+		.content-page{
+			    width: 100%;
 
 		}
-		a{
-			color:#2D3135;
-		}
-		a,a:visited,a:hover,a:active{
-			-webkit-backface-visibility:hidden;
-			backface-visibility:hidden;
-			position:relative;
-			transition:0.5s color ease;
-			text-decoration:none;
 
-		}
-		a:hover{
-			color:#2D3135;
-		}
-		a.before:before,a.after:after{
-			content: "";
-			transition:0.5s all ease;
-			-webkit-backface-visibility:hidden;
-			backface-visibility:hidden;
-			position:absolute;
-		}
-		a.before:before{
-			top:-0.25em;
-		}
-		a.after:after{
-			bottom:-0.25em;
-		}
-		a.before:before,a.after:after{
-			height:2px;
-			width:0;
-			background:#d73444;
-		}
-		a.first:after{
-			left:0;
-		}
-		a.second:after{
-			right:0;
-		}
-		a.third:after,a.sixth:before,a.sixth:after{
-			left:50%;
-			-webkit-transform:translateX(-50%);
-			transform:translateX(-50%);
-		}
-		a.fourth:before,a.fourth:after{
-			left:0;
-		}
-		a.fifth:before,a.fifth:after{
-			right:0;
-		}
-		a.seventh:before{
-			right:0;
-		}
-		a.seventh:after{
-			left:0;
-		}
-		a.eigth:before{
-			left:0;
-		}
-		a.eigth:after{
-			right:0;
-		}
-		a.before:hover:before,a.after:hover:after{
-			width:100%;
-		}
-		.square{
-			box-sizing:border-box;
-			margin-left:-0.4em;
-			position:relative;
-			font-size:2.5em;
-			overflow:hidden;
-		}
-		.square a{
-			position:static;
-			font-size:100%;
-			padding:0.2em 0.4em;
+		.about-me{
+			margin-top: 50px;
+			font-family: 'Josefin Sans', sans-serif;
+			color: #2D3135;
+			text-align: center;
+			font-size:35px;
+			text-transform:uppercase;
 		}
 		
-		.ilustracao .engrenagem-pequena {
-			-webkit-transform-origin: 297px 309px;
-			-moz-transform-origin: 297px 309px;
-			-o-transform-origin: 297px 309px;
-			-ms-transform-origin: 297px 309px;
-			transform-origin: 297px 309px;
-			-webkit-animation: spin 9s linear infinite;
-			-moz-animation: spin 9s linear infinite;
-			-o-animation: spin 9s linear infinite;
-			-ms-animation: spin 9s linear infinite;
-			animation: spin 9s linear infinite;
+		#about{
+			background-color: rgba(0, 0, 0, 0.02);
+			padding:50px 10%;
 		}
-		.ilustracao .engrenagem-grande {
-			-webkit-transform-origin: 266px 226px;
-			-moz-transform-origin: 266px 226px;
-			-o-transform-origin: 266px 226px;
-			-ms-transform-origin: 266px 226px;
-			transform-origin: 266px 226px;
-			-webkit-animation: ant-spin 9s linear infinite;
-			-moz-animation: ant-spin 9s linear infinite;
-			-o-animation: ant-spin 9s linear infinite;
-			-ms-animation: ant-spin 9s linear infinite;
-			animation: ant-spin 9s linear infinite;
+		.content-about{
+			text-align:justify;
+			    font-size: 17px;
+
+			font-family: 'Roboto', sans-serif;
 		}
-		.square:before,.square:after{
-			content: "";
-			box-sizing:border-box;
-			transition:0.25s all ease;
-			-webkit-backface-visibility:hidden;
-			backface-visibility:hidden;
-			position:absolute;
-			width:5px;
-			width:0.35rem;
-			height:0;
-			background:#d73444;
+
+		.myprofession p{
+			font-size:20px;
+			font-weight:none;
+			color: #fff;
+			margin: 0 0px 30px;
 		}
-		.square:before{
-			left:0;
-			bottom:-0.2em;
-		}
-		.square.individual:before{
-			transition-delay:0.6s;
-		}
-		.square:after{
-			right:0;
-			top:-0.2em;
-		}
-		.square.individual:after{
-			transition-delay:0.2s;
-		}
-		.square a:before{
-			left:0;
-			transition:0.25s all ease;
-		}
-		.square a:after{
-			right:0;
-			transition:0.25s all ease;
-		}
-		.square.individual a:after{
-			transition:0.25s all ease 0.4s;
-		}
-		.square:hover:before,.square:hover:after{
-			height:calc(100% + 0.4em);
-		}
-		.square:hover a:before,.square:hover a:after{
-			width:100%;
-		}
-		.hamburger{
-			padding: 0;
-			display: inline-block;
+		.menu-left{
+			z-index: 4;
+			position: fixed;
+			height: 70px;
+			width: 100%;
+			overflow: hidden;
 			cursor: pointer;
-			transition-property: opacity, filter;
-			transition-duration: 0.60s;
-			transition-timing-function: linear;
-			font: inherit;
-			color: inherit;
-			text-transform: none;
-			background-color: transparent;
-			border: 0;
-			position: absolute;
-			margin: 0;
-			overflow: visible;
-			top: 50%;
-			margin-left: -15px;
-			margin-top: -5px;
-			left: 50%;
-			}.hamburger .texto{display:none;margin-right:15px;text-transform:uppercase;font-family:"coves_bold";transition:.15s ease}
-			.hamburger .hamburger-box{width:30px;height:18px;vertical-align:middle;display:inline-block;position:relative}
-			.hamburger .hamburger-inner{display:block;top:50%;margin-top:-2px;top:2px}
-			.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{content:"";display:block}
-			.hamburger .hamburger-inner::before{top:8px;transition-property:transform, opacity;transition-timing-function:ease;transition-duration:0.2s}
-			.hamburger .hamburger-inner::after{top:16px}
-			.hamburger .hamburger-inner,.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{width:30px;height:2px;background-color:#000;position:absolute;transition-property:transform;transition-duration:0.60s;transition-timing-function:ease}
-			.hamburger.ativo .texto{color:#000}
-			.hamburger.ativo .hamburger-inner{transform:translate3d(0, 0px, 0) rotate(45deg)}
-			.hamburger.ativo .hamburger-inner::before{transform:rotate(0deg) translate3d(-105.71429px, 0px, 0);opacity:0;transition:.55s ease;}
-			.hamburger.ativo .hamburger-inner::after{transform:translate3d(0, -16px, 0) rotate(-90deg)}
-			.hamburger:hover:not(.ativo) .texto, .menu-left:hover{color:#FFD000}
-			.hamburger:hover:not(.ativo) .hamburger-inner, .menu-left:hover{transform:translateX(3px)}
-			.hamburger:hover:not(.ativo) .hamburger-inner::before, .menu-left:hover{transform:translateX(-6px)}
-			.hamburger:hover:not(.ativo) .hamburger-inner::after, .menu-left:hover{transform:translateX(0px)}
-			@media only screen and (min-width: 768px){
-				.hamburger .texto{display:inline-block}
-				.hamburger .hamburger-box{width:30px}
-				.hamburger .hamburger-inner,.hamburger .hamburger-inner::before,.hamburger .hamburger-inner::after{width:30px}
-			}
-			.btn{padding:7.5px 15px;border:1px solid transparent;display:inline-block;position:relative;font-size:18px;background-color:transparent;transition:0.5s ease-in-out}
-			.hamburger:focus{
-				box-shadow: 0 0 0 0;
-				border: 0 none;
-				outline: 0;
-			}
-			.content-page{
-				width:94%;
-			}
-			
-			.about-me{
-				font-family: 'Josefin Sans', sans-serif;
-				color: #2D3135;
-				font-size:35px;
-				text-transform:uppercase;
-			}
-			.about-me:after{
-				position:absolute;
-				margin-top:20px;
-				margin-left:30px;
-				height:2px;
-				width:57%;
-				content:'';
-				background-color:#ff0036;
-			}
-			#about{
-				background-color: rgba(0, 0, 0, 0.02);
-				padding:50px 10%;
-			}
-			.content-about{
-				text-align:justify;
-				font-family: 'Roboto', sans-serif;
-			}
-
-			.myprofession p{
-				font-size:20px;
-				font-weight:none;
-				color: #fff;
-				margin: 0 0px 30px;
-			}
-			.menu-left{
-				z-index: 4;
-				position: fixed;
-				height: 100vh;
-				width: 6%;
-				overflow: hidden;
-				cursor: pointer;
-				background-color: #fff;
-				margin:0px;
-
-			}
-			.content-menu{
-				background-color: #fff;
-				height: 100vh;
-				z-index: 3;
-				width: 0px;
-				position: fixed;
-				overflow: hidden;
-				animation-name: animacaomenuclose;
-				animation-duration: 1.0s;
-				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-				border-right: 1px solid #e8e8e8;
-				animation-delay: 0.8s;
-				animation-fill-mode: both;
-			}
-			.content-menu-right{
-				background-color:#2e2e2e;
-				height: 100vh;
-				width:50vh;
-				left:50%;
-				z-index: 2;
-				position: fixed;
-				overflow: hidden;
-				animation-name: animacaomenuright;
-				animation-duration: 1.0s;
-				animation-timing-function: cubic-bezier(0.620, 0.120, 0.610, 1.325);;
-				animation-delay: 0s;
-				animation-fill-mode: both;
-			}
-			.icon-close{
-				display: none;
-				color: #fff;
-			}
-			.icon-menu-close{
-				color: #000;
-				display: none;
-			}
-			.hide{
-				display: none !important;
-			}
-			.visible{
-				display: block !important;
-			}
-
-			.menu-left .icon-menu, .icon-menu-close{
-				position: fixed;
-				height: 25px;
-				width: 25px;
-				left: 3%;
-				top: 50%;
-				margin: -12.5px 0 0 -12.5px;
-			}
-			.menu-left:hover .icon-menu span:first-child{
-				max-width: 12px;
-			}
-			.menu-left:hover .icon-menu span:nth-child(2){
-				max-width: 18px;
-			}
-			.menu-left:hover .icon-menu span:nth-child(3){
-				max-width: 100%;
-			}
-			.menu-left .icon-menu span{
-				display: block;
-				width: 100%;
-				max-width: 100%;
-				height: 2px;
-				background-color: #2d3135;
-				-webkit-transition: all 0.1s ease-in-out;
-				-moz-transition: all 0.1s ease-in-out;
-				-ms-transition: all 0.1s ease-in-out;
-				-o-transition: all 0.1s ease-in-out;
-				transition: all 0.2s linear;
-			}
-			.menu-left .icon-menu span:nth-child(2){
-				margin: 5px 0;
-			}
-			.menu-left .icon-menu span:nth-child(3){
-				max-width: 12px;
-			}
-
-			.menu-list ul{
-				visible:hidden;
-				list-style: none;
-				position:absolute;
-				height: 230px;
-				width: 170px;
-				top:50%;
-				margin-top:-115px;
-				margin-left: -105px;
-				left:50%;
-
-			}
-			.menu-list ul li{
-				text-transform:lowercase;
-				padding: 10px;
-				font-family: 'Josefin Sans', sans-serif;
-				color: #2D3135;
-				font-size: 30px;
-			}
-
-
-
-			.menu-left:hover .icon-menu-close span:first-child{
-				transform: rotate(-45deg);
-			}
-			.menu-left:hover .icon-menu-close span:nth-child(2){
-				transform: rotate(45deg);
-			}
-			.menu-left .icon-menu-close span{
-				display: block;
-				width: 100%;
-				max-width: 100%;
-				height: 2px;
-				background-color: #2d3135;
-				-webkit-transition: all 0.1s ease-in-out;
-				-moz-transition: all 0.1s ease-in-out;
-				-ms-transition: all 0.1s ease-in-out;
-				-o-transition: all 0.1s ease-in-out;
-				transition: all 1.2s linear;
-			}
-			.menu-left .icon-menu-close span:first-child{
-
-				transform: rotate(45deg) translate(2.5px,3px);
-				transition: all 0.2s linear;
-
-			}
-			.menu-left .icon-menu-close span:nth-child(2){
-				transition: all 0.2s linear;
-				transform: rotate(-45deg) translate(-2.5px,1px);
-			}
-			.content-menu-right .imgprofile{
-				position:absolute;
-				width:200px;
-				height200px;
-				left:50%;
-				top:10%;
-				margin-left:-100px;
-			}
-			.content-menu-right .imgprofile img{
-				max-width:200px;
-				border-radius: 50% 50%;
-				border:5px solid #fff;
-			}
-			.descriptionmenu{
-				text-align:center;
-				color:#fff;
-				width:100%;
-				font-size: 20px;
-				font-family: 'Tenor Sans', sans-serif;
-			}
-			
-			.socialnetworks{
-				position:absolute;
-				display:inline-flex;
-				bottom:5%;
-				right:5%;
-				margin-left:-250px;
-				text-align: center;
-			}
-			.socialnetworks i{
-				padding:15px;
-			}
-			.facebook,.linkedin{
-				color:#fff;
-				padding:15px;
-				font-size: 20px;
-				font-family: 'Josefin Sans', sans-serif;
-			}
-			.facebook:before{
-				content: '';
-				position: absolute;
-				top: 25px;
-				left: -5px;
-				width: 4px;
-				height: 4px;
-				border: 3px solid #fff;
-			}
-			.linkedin:before{
-				content: '';
-				position: absolute;
-				top: 25px;
-				left: 98px;
-				width: 4px;
-				height: 4px;
-				border: 3px solid #fff;
-			}
-			.fa-facebook-official{
-				color:#fff;
-				font-size:50px !important;
-			}
-			.fa-linkedin{
-				color:#fff;
-				font-size:50px !important;
-			}
-
-
-
-
-
-			.content-page{
-				padding-left: 80px;
-			}
-			.hero{
-				position: relative;
-				height: 100vh;
-				width: 94%;
-				margin-left: 6%;
-				background-color:#141414;
-			}
-			.content-hero{
-				position: absolute;
-				width: 820px;
-				height: 280px;
-				left: 40%;
-				top: 50%;
-				margin-left: -410px;
-				margin-top: -140px;
-			}
-			.content-hero .myname{
-				font-family: 'Josefin Sans', sans-serif;
-				color: #ff0036;
-				font-size: 30px;
-			}
-			.content-hero .myprofession{
-				text-transform: uppercase;
-				font-family: 'Oswald', sans-serif;
-				color: #ebebeb;
-				font-size: 100px;
-				overflow: hidden;
-				font-weight: bold;
-			}
-			.content-hero .mydescription{
-				font-family: 'Josefin Sans', sans-serif;
-				color: rgba(255, 255, 255, 0.64);
-				font-size: 30px;
-			}
-
-
-
-			/* ------------------- ANIMAÇÕES ------------------------- */
-			.animacao-profession{
-				animation-name: animacao;
-				animation-duration: 1s;
-				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-				animation-delay: 1.5s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-			.animacao-titulopagina{
-				animation-name: animacao-tituloPagina;
-				animation-duration: 0.6s;
-				animation-timing-function: cubic-bezier(0.540, 0.095, 0.285, 0.610);
-				animation-delay:0s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-			.animacao-menu-list{
-				animation-name: animacao-menulist;
-				animation-duration: 1.5s;
-				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-				animation-delay:0.6s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-			.animacao-titulopagina-boot{
-				animation-name: animacao-titulopagina-boot;
-				animation-duration: 1.0s;
-				animation-timing-function: cubic-bezier(0.540, 0.095, 0.285, 0.610);
-				animation-delay:0s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-
-			.animacao-background-home1{
-				animation-name: animacao-background;
-				animation-duration: 1.5s;
-				animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-				animation-delay:1s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-			.animacao-iconcontainer{
-				animation-name: animacao-iconmenu;
-				animation-duration: 2s;
-				animation-timing-function: ease-in;
-				animation-delay:0s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-			.animacao-lines{
-				animation-name: lines;
-				animation-duration: 2s;
-				animation-timing-function: linear;
-				animation-delay: 1.0s;
-				animation-fill-mode: both;
-			}
-			.animacao-overlay{
-				animation-name: overlay;
-				animation-duration: 1s;
-				animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
-				animation-delay: 2.5s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-
-			.animacao-linebottom{
-				animation-name: linebottom;
-				animation-duration: 1s;
-				animation-timing-function: ease;
-				animation-delay: 3s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-			.animacao-lineheight{
-				animation-name: lineheight;
-				animation-duration: 1s;
-				animation-timing-function: ease;
-				animation-delay: 3s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-			.animacao-block{
-				animation-name: blockblue;
-				animation-duration: 1s;
-				animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
-				animation-delay: 3.5s;
-				animation-direction: alternate;
-				animation-play-state: running;
-				animation-fill-mode: both;
-			}
-			.animation-block-bottom{
-				animation-name: blockbottom;
-				animation-duration: 1s;
-				animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
-				animation-delay: 3.0s;
-				animation-direction: alternate;
-				animation-fill-mode: both;
-			}
-
-			.animacao-text{
-				
-			}
-			.animacao-menu{
-				animation-name: animacaomenu;
-				animation-duration: 1.0s;
-				animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-				animation-delay: 0s;
-				overflow: hidden;
-				animation-fill-mode: both;
-			}
-			.animacao-menu-right{
-				animation-name: animacaomenurightopen;
-				animation-duration: 1s;
-				animation-timing-function: ease;
-				animation-delay: 1.0s;
-				overflow: hidden;
-				animation-fill-mode: both;
-
-			}
-
+			background-color: #fff;
+			margin:0px;
 
 		}
+		.content-menu{
+			background-color: #fff;
+			height: 100vh;
+			z-index: 3;
+			width: 0px;
+			position: fixed;
+			overflow: hidden;
+			animation-name: animacaomenuclose;
+			animation-duration: 1.0s;
+			animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+			border-right: 1px solid #e8e8e8;
+			animation-delay: 0s;
+			animation-fill-mode: both;
+		}
+		.content-menu-right{
+			display: none;
+			background-color:#2e2e2e;
+			height: 100vh;
+			width:50vh;
+			left:50%;
+			z-index: 2;
+			position: fixed;
+			overflow: hidden;
+			animation-name: animacaomenuright;
+			animation-duration: 1.0s;
+			animation-timing-function: cubic-bezier(0.620, 0.120, 0.610, 1.325);;
+			animation-delay: 0s;
+			animation-fill-mode: both;
+		}
+		.icon-close{
+			display: none;
+			color: #fff;
+		}
+		.icon-menu-close{
+			color: #000;
+			display: none;
+		}
+		.hide{
+			display: none !important;
+		}
+		.visible{
+			display: block !important;
+		}
+
+		.menu-left .icon-menu, .icon-menu-close{
+			position: fixed;
+			height: 25px;
+			width: 25px;
+			left: 3%;
+			top: 50%;
+			margin: -12.5px 0 0 -12.5px;
+		}
+		.menu-left:hover .icon-menu span:first-child{
+			max-width: 12px;
+		}
+		.menu-left:hover .icon-menu span:nth-child(2){
+			max-width: 18px;
+		}
+		.menu-left:hover .icon-menu span:nth-child(3){
+			max-width: 100%;
+		}
+		.menu-left .icon-menu span{
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			height: 2px;
+			background-color: #2d3135;
+			-webkit-transition: all 0.1s ease-in-out;
+			-moz-transition: all 0.1s ease-in-out;
+			-ms-transition: all 0.1s ease-in-out;
+			-o-transition: all 0.1s ease-in-out;
+			transition: all 0.2s linear;
+		}
+		.menu-left .icon-menu span:nth-child(2){
+			margin: 5px 0;
+		}
+		.menu-left .icon-menu span:nth-child(3){
+			max-width: 12px;
+		}
+
+		.menu-list ul{
+			visible:hidden;
+			list-style: none;
+			position:absolute;
+			height: 230px;
+			width: 170px;
+			top:50%;
+			margin-top:-115px;
+			margin-left: -105px;
+			left:50%;
+
+		}
+		.menu-list ul li{
+			text-transform:lowercase;
+			padding: 10px;
+			font-family: 'Josefin Sans', sans-serif;
+			color: #2D3135;
+			font-size: 30px;
+		}
+
+
+
+		.menu-left:hover .icon-menu-close span:first-child{
+			transform: rotate(-45deg);
+		}
+		.menu-left:hover .icon-menu-close span:nth-child(2){
+			transform: rotate(45deg);
+		}
+		.menu-left .icon-menu-close span{
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			height: 2px;
+			background-color: #2d3135;
+			-webkit-transition: all 0.1s ease-in-out;
+			-moz-transition: all 0.1s ease-in-out;
+			-ms-transition: all 0.1s ease-in-out;
+			-o-transition: all 0.1s ease-in-out;
+			transition: all 1.2s linear;
+		}
+		.menu-left .icon-menu-close span:first-child{
+
+			transform: rotate(45deg) translate(2.5px,3px);
+			transition: all 0.2s linear;
+
+		}
+		.menu-left .icon-menu-close span:nth-child(2){
+			transition: all 0.2s linear;
+			transform: rotate(-45deg) translate(-2.5px,1px);
+		}
+		.content-menu-right .imgprofile{
+			position:absolute;
+			width:200px;
+			height200px;
+			left:50%;
+			top:10%;
+			margin-left:-100px;
+		}
+		.content-menu-right .imgprofile img{
+			max-width:200px;
+			border-radius: 50% 50%;
+			border:5px solid #fff;
+		}
+		.descriptionmenu{
+			text-align:center;
+			color:#fff;
+			width:100%;
+			font-size: 20px;
+			font-family: 'Tenor Sans', sans-serif;
+		}
+
+		.socialnetworks{
+			position:absolute;
+			display:inline-flex;
+			bottom:5%;
+			right:5%;
+			margin-left:-250px;
+			text-align: center;
+		}
+		.socialnetworks i{
+			padding:15px;
+		}
+		.facebook,.linkedin{
+			color:#fff;
+			padding:15px;
+			font-size: 20px;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		.facebook:before{
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: -5px;
+			width: 4px;
+			height: 4px;
+			border: 3px solid #fff;
+		}
+		.linkedin:before{
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: 98px;
+			width: 4px;
+			height: 4px;
+			border: 3px solid #fff;
+		}
+		.fa-facebook-official{
+			color:#fff;
+			font-size:50px !important;
+		}
+		.fa-linkedin{
+			color:#fff;
+			font-size:50px !important;
+		}
+
+
+
+
+
+		.content-page{
+
+		}
+		.hero{
+			position: relative;
+			height: 100vh;
+			background-color:#141414;
+		}
+		.content-hero{
+			z-index: 9;
+			position: absolute;
+			/* width: 100%; */
+			height: 280px;
+			top: 50%;
+			padding: 30px;
+			margin-top: -140px;
+		}
+		.content-hero .myname{
+			font-family: 'Josefin Sans', sans-serif;
+			color: #ff0036;
+			font-size: 30px;
+		}
+		.content-hero .myprofession{
+			text-transform: uppercase;
+			font-family: 'Oswald', sans-serif;
+			color: #ebebeb;
+			font-size: 50px;
+			overflow: hidden;
+		}
+		.content-hero .mydescription{
+			font-family: 'Josefin Sans', sans-serif;
+			color: rgba(255, 255, 255, 0.64);
+			font-size: 30px;
+		}
+
+
+
+		/* ------------------- ANIMAÇÕES ------------------------- */
+		.animacao-profession{
+			animation-name: animacao;
+			animation-duration: 1s;
+			animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+			animation-delay: 1.5s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+		.animacao-titulopagina{
+			animation-name: animacao-tituloPagina;
+			animation-duration: 0.6s;
+			animation-timing-function: cubic-bezier(0.540, 0.095, 0.285, 0.610);
+			animation-delay:0s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+		.animacao-menu-list{
+			animation-name: animacao-menulist;
+			animation-duration: 1.5s;
+			animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+			animation-delay:0.6s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+		.animacao-titulopagina-boot{
+			animation-name: animacao-titulopagina-boot;
+			animation-duration: 1.0s;
+			animation-timing-function: cubic-bezier(0.540, 0.095, 0.285, 0.610);
+			animation-delay:0s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+
+		.animacao-background-home1{
+			animation-name: animacao-background;
+			animation-duration: 1.5s;
+			animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+			animation-delay:1s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+		.animacao-iconcontainer{
+			animation-name: animacao-iconmenu;
+			animation-duration: 2s;
+			animation-timing-function: ease-in;
+			animation-delay:0s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+		.animacao-lines{
+			animation-name: lines;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			animation-delay: 1.0s;
+			animation-fill-mode: both;
+		}
+		.animacao-overlay{
+			animation-name: overlay;
+			animation-duration: 1s;
+			animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+			animation-delay: 2.5s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+
+		.animacao-linebottom{
+			animation-name: linebottom;
+			animation-duration: 1s;
+			animation-timing-function: ease;
+			animation-delay: 3s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+		.animacao-lineheight{
+			animation-name: lineheight;
+			animation-duration: 1s;
+			animation-timing-function: ease;
+			animation-delay: 3s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+		.animacao-block{
+			animation-name: blockblue;
+			animation-duration: 1s;
+			animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+			animation-delay: 3.5s;
+			animation-direction: alternate;
+			animation-play-state: running;
+			animation-fill-mode: both;
+		}
+		.animation-block-bottom{
+			animation-name: blockbottom;
+			animation-duration: 1s;
+			animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+			animation-delay: 3.0s;
+			animation-direction: alternate;
+			animation-fill-mode: both;
+		}
+
+		.animacao-text{
+
+		}
+		.animacao-menu{
+			animation-name: animacaomenu;
+			animation-duration: 1.0s;
+			animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+			animation-delay: 0s;
+			overflow: hidden;
+			animation-fill-mode: both;
+		}
+		.animacao-menu-right{
+			animation-name: animacaomenurightopen;
+			animation-duration: 1s;
+			animation-timing-function: ease;
+			animation-delay: 1.0s;
+			overflow: hidden;
+			animation-fill-mode: both;
+
+		}
+
+
+	}
