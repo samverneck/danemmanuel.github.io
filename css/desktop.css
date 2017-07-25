@@ -560,13 +560,22 @@
 				color: #ff0036;
 				font-size: 30px;
 			}
-			.content-hero .myprofession{
+			 .myprofession{
 				text-transform: uppercase;
 				font-family: 'Oswald', sans-serif;
 				color: #ebebeb;
 				font-size: 100px;
 				overflow: hidden;
 				font-weight: bold;
+			}
+			.areaTexto{
+				text-transform: uppercase;
+				font-family: 'Oswald', sans-serif;
+				color: #ebebeb;
+				font-size: 100px;
+				overflow: hidden;
+				font-weight: bold;
+				height:130px;
 			}
 			.content-hero .mydescription{
 				font-family: 'Josefin Sans', sans-serif;
