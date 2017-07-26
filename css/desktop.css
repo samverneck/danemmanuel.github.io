@@ -195,19 +195,23 @@
 				outline: 0;
 			}
 			.content-page{
-				width:94%;
-				padding-left: 80px;
+				position: absolute;
+				width: 94%;
+
+				right: 0px;
 			}
 			
-			.about-me{
+			.section-title{
 				font-family: 'Josefin Sans', sans-serif;
 				color: #0A0E11;
 				font-size:35px;
 				padding:30px 29px 30px 10%;
 				width: 200px;
-				
-				background-color:#fff;
 				text-transform:uppercase;
+			}
+			.right{
+
+				text-align: right;
 			}
 			.scrolldown{
 				position: absolute;
@@ -222,12 +226,21 @@
 				height: 100%;
 				right: 0px;
 				top: 100%;
+				
+
+			}
+			.content-about:after{
+				
+				content:'';
+				position: absolute;
+				height: 100%;
+				top: 0px;
+				right: -100%;
 				background-image: url(../img/vida.jpg);
 				background-position: center center;
 				background-size: cover;
-				width: 35%;
-				background-attachment: fixed;
-
+				width: 80%;
+				
 			}
 			.vida-text{
 				opacity: 0;
@@ -301,10 +314,17 @@
 				font-size: 30px;
 			}
 			#about{
-				padding:10px 10%;
+				padding:0px 10%;
 			}
+			
+			#services{
+			
+				padding:0px 10%;
+				
+			}
+
 			.content-about{
-	        font-size: 1em;
+				font-size: 1em;
 				text-align:justify;
 				font-family: 'Roboto', sans-serif;
 			}
@@ -527,7 +547,7 @@
 				background: -webkit-linear-gradient(to right, #141414 50%, transparent); /* For Safari 5.1 to 6.0 */
 				background: -o-linear-gradient(to right, #141414 50%, transparent); /* For Opera 11.1 to 12.0 */
 				background: -moz-linear-gradient(to right, #141414 50%, transparentto right, #141414 50%, transparent); /* For Firefox 3.6 to 15 */
-			    background: linear-gradient(to right, rgba(0, 0, 0, 0.78) 30%, transparent);
+				background: linear-gradient(to right, rgba(0, 0, 0, 0.78) 30%, transparent);
 				opacity:1;
 				z-index:1;
 				width: 94%;
@@ -548,7 +568,7 @@
 			.content-hero{
 				position: absolute;
 				z-index:1;
-				width: 820px;
+				max-width: 1000px;
 				height: 280px;
 				left: 40%;
 				top: 50%;
@@ -560,13 +580,12 @@
 				color: #ff0036;
 				font-size: 30px;
 			}
-			 .myprofession{
+			.myprofession{
 				text-transform: uppercase;
 				font-family: 'Oswald', sans-serif;
 				color: #ebebeb;
 				font-size: 100px;
 				overflow: hidden;
-				font-weight: bold;
 			}
 			.areaTexto{
 				text-transform: uppercase;
