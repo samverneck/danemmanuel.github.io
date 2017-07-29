@@ -109,7 +109,7 @@
 
 	@keyframes animacao-menulist {
 		from {
-			top:-20%;
+			top:-50%;
 		}
 		to { 
 			top:50%;

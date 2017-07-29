@@ -350,7 +350,7 @@
 				font-family: 'Josefin Sans', sans-serif;
 				color: #0A0E11;
 				font-size:35px;
-				padding:30px 29px 30px 10%;
+				padding:30px 29px 30px 9%;
 				width: 70%;
 				text-transform:uppercase;
 			}
@@ -587,10 +587,10 @@
 				visible:hidden;
 				list-style: none;
 				position:absolute;
-				height: 230px;
+				height: 290px;
 				width: 170px;
 				top:50%;
-				margin-top:-115px;
+				margin-top:-145px;
 				margin-left: -105px;
 				left:50%;
 
