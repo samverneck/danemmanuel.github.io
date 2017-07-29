@@ -219,7 +219,7 @@
 				text-align: center;
 			}
 			.descricao-team1{
-				background-color: #fff;
+				background-color: rgba(255, 255, 255, 0.74);
 				position: absolute;
 				right: 0px;
 				width: 50%;
@@ -237,7 +237,7 @@
 				font-size: 20px;
 			}
 			.descricao-team2{
-				background-color: #fff;
+				    background-color: rgba(255, 255, 255, 0.31);
 				position: absolute;
 				left: 0px;
 				width: 50%;
@@ -350,7 +350,7 @@
 				font-family: 'Josefin Sans', sans-serif;
 				color: #0A0E11;
 				font-size:35px;
-				    padding-top: 50px;
+				padding-top: 50px;
 				padding:30px 29px 30px 9%;
 				text-transform:uppercase;
 			}
