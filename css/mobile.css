@@ -502,6 +502,9 @@
 		.team-member{
 			text-align: center;
 		}
+		.team-member img{
+			max-width: 100%;
+		}
 		.descricao-team1{
 			background-color: #fff;
 			position: absolute;
