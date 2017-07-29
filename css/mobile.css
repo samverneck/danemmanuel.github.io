@@ -505,6 +505,15 @@
 		.team-member img{
 			max-width: 100%;
 		}
+		.areaTexto{
+				text-transform: uppercase;
+				font-family: 'Oswald', sans-serif;
+				color: #ebebeb;
+				font-size: 45px;
+				overflow: hidden;
+				font-weight: bold;
+				height:65px;
+			}
 		.descricao-team1{
 			background-color: #fff;
 			position: absolute;
