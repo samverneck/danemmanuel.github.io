@@ -41,7 +41,7 @@
 		<div class="menu-list">
 			<ul>
 				<li> <a class="first after" href="index.html">home</a></li>
-				<li> <a class="first after" href="#">portfólio</a></li>
+				<li> <a class="first after" href="#about">portfólio</a></li>
 				<li> <a class="first after" href="#about">sobre mim</a></li>
 				<li> <a class="first after" href="#">contato</a></li>
 			</ul>
@@ -85,16 +85,9 @@
 				Fico feliz em poder me apresentar melhor à você.
 			</div>
 		</div>
-		<div class="scrolldown">
-			<a href="#main">
-				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48">
-					<g class="nc-icon-wrapper" fill="#fff">
-						<path d="M22 36V12L5 24l17 12zm1-12l17 12V12L23 24z"></path>
-					</g>
-				</svg>
-			</a>
-		</div>
+		<a href="#main" class="scroll-arrow"></a>
 	</div>
+
 	<div class="hero segmenter" style="background-image: url(img/code.jpg)">
 
 
@@ -120,14 +113,137 @@
 				</div>
 			</div>
 		</section>
+		<div class="separator"></div>
+		
+		<section id="cases">
+			<h2 class="section-title">
+				Top companies <span> em que me envolvi em projetos parciais e integrais</span>
+			</h2>
+			<div class="col-md-3">
+				<div class="case">
+					<img src="img/plastimil.png">
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="case">
+					<img src="img/jofege.png">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="case">
+					<img src="img/mig.png">
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="case">
+					<img src="img/giovana.png">
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="case">
+					<img src="img/wise.png">
+				</div>
+			</div>	
+			<div class="col-md-3">
+				<div class="case">
+					<img src="img/carrantos.png">
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="case">
+					<img src="img/cp.png">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="case">
+					<img src="img/trillennium.png">
+				</div>
+			</div>
+
+		</section>
 
 		<h2 class="section-title">
-			serviços
+			O que faço afinal?
+		</h2>
+		<section class="sites">
+			<div class="content-right1">
+				<div class="title-service">
+					Full Stack
+				</div>
+				<div class="content-service">
+					<p>Como Full Stack, minha função é gerenciar absolutamente todas as etapas
+						de um desenvolvimento de site, desde a compra do domínio, plano de hospedagem,
+						definição da interface, etc... até a integração com possíveis plataformas e suporte pós finalização</p>
+						<p>Mantenho todas as etapas super transparentes para que você possa opinar e acompanhar diretamente cada processo.</p>
+					</div>
+				</div>
+			</section>
+			<section class="frontend">
+				<div class="content-right2">
+					<div class="title-service">
+						Front end
+					</div>
+					<div class="content-service">
+						<p>Se preferir, como Frontend apenas transformarei suas ideias criativas em páginas web responsivas
+							(que se ajustam de acordo com o dispositivo).</p>
+							<p>Adicionando estilos e animações fantásticas, seu site se tornará diferente de tudo o que já viu =)</p>
+						</div>
+					</div>
+				</section>
+				<section class="backend">
+					<div class="content-right3">
+						<div class="title-service">
+							Back end
+						</div>
+						<div class="content-service">
+							<p>Como Backend, posso te ajudar a incluir recursos específicos de acordo com sua necessidade em seu site 
+								ou sistema web.</p>
+								<p>Experiênte em solução de problemas, apresentarei a você a solução mais rentável para a sua necessidade
+									no menor tempo possível. Afinal, tempo é dinheiro não é mesmo?</p>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="team">
+							<h2 class="section-title">
+							Meu time <span> Com motivações como essas tem como não sair algo maravilhoso? </span>
+							</h2>
+							<div class="col-md-6">
+								<div class="team-member">
+									<img src="img/team1.jpg">
+									<div class="descricao-team1">
+										<p>Camila</p>
+										<span>a namorada</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="team-member">
+									<img src="img/team2.jpg">
+									<div class="descricao-team2">
+										<p>Bella</p>
+										<span>a filha</span>
+									</div>
+								</div>
+							</div>
+
+						</section>
+
+
+
+		<!--<h2 class="section-title">
+			O que faço
 		</h2>
 		<section id="services">
 			<div class="overlay-services"></div>
 			dasdas	
-		</section>
+		</section>-->
 
 
 	</div>
@@ -138,7 +254,7 @@
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/main2.js"></script>
 		<script>
-			$('a[href^="#"]').on('click', function(event) {
+			$('.scroll-arrow').on('click', function(event) {
 				var target = $(this.getAttribute('href'));
 				if( target.length ) {
 					event.preventDefault();
