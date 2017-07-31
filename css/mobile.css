@@ -130,6 +130,7 @@
 		height:0;
 		background:#d73444;
 	}
+
 	.vida-text{
 		display: none;
 	}
@@ -261,7 +262,6 @@
 			animation-name: animacaomenuclose;
 			animation-duration: 1.0s;
 			animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-			border-right: 1px solid #e8e8e8;
 			animation-delay: 0s;
 			animation-fill-mode: both;
 		}
@@ -578,6 +578,40 @@
 			-webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
 			transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
 		}
+		.projtext{
+				background-color: rgba(255, 255, 255, 0.74);
+				position: absolute;
+				right: 0px;
+				width: 50%;
+				top: 0px;
+				height: 100%;
+				border-right: 1px solid rgba(0, 0, 0, 0.18);
+			}
+			.projtext p{
+				font-family: 'Oswald', sans-serif;
+				font-size: 20px;
+				padding: 0px 10px;
+				color: #000;
+				text-align: left;
+			}
+			.projtext span, .projtext b{
+
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 20px;
+				font-weight: bold;
+				color: #ff0036;
+				padding:0px 10px;
+			}
+			.traj img {
+				max-height: 400px;
+				max-width: 100%;
+			}
+			.trajetoria{
+				position: absolute;
+				width: 100%;
+				margin-top: 460vh;
+
+			}
 		.team-member{
 			text-align: center;
 		}
